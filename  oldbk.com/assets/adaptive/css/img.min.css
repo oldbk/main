@@ -1,0 +1,316 @@
+.im-0 {
+    background-image: url(../img/block/full-background.png);
+}
+
+.im-1 {
+    background-image: url(../img/block/ugol-left.png);
+}
+
+.im-2 {
+    background-image: url(../img/block/ugol-right.png);
+}
+
+.im-3 {
+    background-image: url(../img/block/line.png);
+}
+
+.im-4 {
+    background-image: url(../img/block/line-bt.png);
+}
+
+.im-5 {
+    background-image: url(../img/block/left-gr.png);
+}
+
+.im-5-fix {
+    background-image: url(../img/block/left-gr-fix.png);
+}
+
+.im-6-fix {
+    background-image: url(../img/block/right-gr-fix.png);
+}
+
+.im-6 {
+    background-image: url(../img/block/right-gr.png);
+}
+
+.im-7 {
+    background-image: url(../img/block/ugol-left-bt.png);
+}
+
+.im-7-fix {
+    background-image: url(../img/block/ugol-left-bt-fix.png);
+}
+
+.im-8 {
+    background-image: url(../img/block/ugol-right-bt.png);
+}
+
+.im-8-fix {
+    background-image: url(../img/block/ugol-right-bt-fix.png);
+}
+
+.im-9 {
+    background-image: url(../img/block/left-menu.png);
+}
+
+.im-10 {
+    background-image: url(../img/block/bg_cont_box.png);
+}
+
+.im-11 {
+    background-image: url(../img/block/bg_cont_box_top.png);
+}
+
+.im-12 {
+    background-image: url(../img/block/bg_cont_box_bot.png);
+}
+
+.im-13 {
+    background-image: url(https://oldbk.com/images/center_icon.png);
+}
+
+.im-14 {
+    background-image: url(https://oldbk.com/img/ivent_10.jpg);
+}
+
+.im-15 {
+    background-image: url(../img/block/news-line-block.png);
+}
+
+.im-16 {
+    background-image: url(../img/block/news-left-block.png);
+}
+
+.im-17 {
+    background-image: url(../img/block/news-right-block.png);
+}
+
+.im-18 {
+    background-image: url(../img/block/down_PNG.png);
+}
+
+.im-19 {
+    background-image: url(../img/block/up_war_flag.png);
+}
+
+.im-20 {
+    background-image: url(../img/block/up_war_flag1.png);
+}
+
+.im-21 {
+    background-image: url(../img/block/up_war_flag3.png);
+}
+
+.im-22 {
+    background-image: url(../img/block/up_war_flag4.png);
+}
+
+.im-23 {
+    background-image: url(../img/block/razdelitel_JPG.jpg);
+}
+
+.im-24 {
+    background-image: url(../img/block/down_button.png);
+}
+
+.im-24a {
+    background-image: url(../img/block/up_button.png);
+}
+
+.im-25 {
+    background-image: url(../img/block/line-sl.png);
+}
+
+.im-26 {
+    background-image: url(../img/block/line-bt-sl.png);
+}
+
+.im-27 {
+    background-image: url(../img/block/background-menu.png);
+}
+
+.im-28 {
+    background-image: url(../img/menu/2bg_menu_1.jpg);
+}
+
+.im-29 {
+    background-image: url(../img/menu/2bg_menu_2.jpg);
+}
+
+.im-30 {
+    background-image: url(../img/menu/2bg_menu_3.jpg);
+}
+
+.im-31 {
+    background-image: url(../img/menu/2bg_menu_4.jpg);
+}
+
+.im-32 {
+    background-image: url(../img/menu/2bg_menu_5.jpg);
+}
+
+.im-33 {
+    background-image: url(../img/menu/2bg_menu_6.jpg);
+}
+
+.im-34 {
+    background-image: url(../img/widget/1.png);
+}
+
+.im-35 {
+    background-image: url(../img/widget/2.png);
+}
+
+.im-36 {
+    background-image: url(../img/widget/3.png);
+}
+
+.im-37 {
+    background-image: url(../img/widget/4.png);
+}
+
+.im-38 {
+    background-image: url(../img/widget/5.png);
+}
+
+.im-39 {
+    background-image: url(../img/widget/6.png);
+}
+
+.im-40 {
+    background-image: url(../img/widget/7.png);
+}
+
+.im-41 {
+    background-image: url(../img/widget/8.png);
+}
+
+.im-42 {
+    background-image: url(../img/widget/entr_sprite.png);
+    border: 0;
+    background-color: transparent;
+}
+
+.im-43 {
+    background-image: url(../img/widget/napomnit_sprite.png);
+}
+
+.im-44 {
+    background-image: url(../img/widget/napomnit_sprite_reg.png);
+}
+
+.im-45 {
+    background-image: url(../img/scroll/1.png);
+}
+
+.im-46 {
+    background-image: url(../img/scroll/2.png);
+}
+
+.im-47 {
+    background-image: url(../img/scroll/3.png);
+}
+
+.im-48 {
+    background-image: url(../img/scroll/4.png);
+}
+
+.im-49 {
+    background-image: url(../img/scroll/5.png);
+}
+
+.im-50 {
+    background-image: url(../img/widget/category.png);
+}
+
+.im-51 {
+    background-image: url(../img/rang/ico1.png);
+    background-position: 0 -21px;
+    overflow: hidden;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.im-52 {
+    background-image: url(../img/rang/ico2.png);
+    background-position: 0 -21px;
+    overflow: hidden;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.im-53 {
+    background-image: url(../img/rang/ico3.png);
+    background-position: 0 -21px;
+    overflow: hidden;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.im-54 {
+    background-image: url(../img/rang/ico4.png);
+    background-position: 0 -21px;
+    overflow: hidden;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.im-55 {
+    background-image: url(../img/rang/ico5.png);
+    background-position: 0 -21px;
+    overflow: hidden;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.im-56 {
+    background-image: url(../img/rang/top-back-gr.png);
+    width: 100%;
+    max-width: 245px;
+    height: 56px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.im-57 {
+    background-image: url(../img/rang/tops_bg_y.jpg);
+    width: 100%;
+    max-width: 245px;
+    height: 100%;
+    background-size: 100%;
+}
+
+.im-58 {
+    background-image: url(../img/rang/tops_down_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.im-59 {
+    background-image: url(../img/rega_small.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.im-60 {
+    width: 100%;
+    height: 25px;
+    background-image: url(../img/cracks.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 8px;
+}
+
+.im-01 {
+    background-image: url(../img/block/full-background.png);
+    background-repeat: repeat-x;
+}
+
+.im-61 {
+    background-image: url(../img/reg_button.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 36px;
+}

@@ -1,0 +1,11 @@
+{% if items | length > 0 %}
+    <ul>
+        {% for item in items %}
+            <li>
+                <img class="img-details" src="{{ item.image }}" data-shop="{{ filter.shop }}" data-category="{{ filter.category }}" data-id="{{ item.id }}">
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <div>Выбери настройки для отображения предметов</div>
+{% endif %}

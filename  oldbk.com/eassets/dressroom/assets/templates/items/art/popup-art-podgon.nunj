@@ -1,0 +1,12 @@
+<div>
+    <h6>Подгон</h6>
+    <ul class="list_one">
+        <li class="podgon-block">
+            <img src="" data-bind="click: access().podgon == true ? podgon().num(podgon().num() == 1 ? 0 : 1) : function(){}, attr:{src: podgon().image('1')}, css: podgon().num() >= 1 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: access().podgon == true ? podgon().num(podgon().num() == 2 ? 0 : 2) : function(){}, attr:{src: podgon().image('2')}, css: podgon().num() >= 2 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: access().podgon == true ? podgon().num(podgon().num() == 3 ? 0 : 3) : function(){}, attr:{src: podgon().image('3')}, css: podgon().num() >= 3 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: access().podgon == true ? podgon().num(podgon().num() == 4 ? 0 : 4) : function(){}, attr:{src: podgon().image('4')}, css: podgon().num() >= 4 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: access().podgon == true ? podgon().num(podgon().num() == 5 ? 0 : 5) : function(){}, attr:{src: podgon().image('5')}, css: podgon().num() == 5 ? 'select' : 'unselect'">
+        </li>
+    </ul>
+</div>

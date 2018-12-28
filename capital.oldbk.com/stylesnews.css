@@ -1,0 +1,46 @@
+* {padding:0; margin:0; list-style:none}
+
+html, body {min-height:100%; color:#251c13; font:normal 12px Tahoma, Geneva, sans-serif; background: url(../images/site_bg.gif) repeat-x 0 61px #606260}
+
+a img {border:0}
+
+img {overflow:hidden}
+a {color:#482b00; }
+a:hover {text-decoration:none;}
+
+h1 {font-size:18px; padding-bottom:10px;}
+h2 {font-size:16px;  padding-bottom:10px;}
+p {padding-bottom:10px;}
+ 	
+#nPage {width:878px; margin:auto; background: url(../images/header_bg.jpg) no-repeat}
+
+#header {padding-left:30px}
+#header .slogan {text-align:center; padding:20px 0}
+#header #logo {height:130px; width:165px; display:block; margin:auto}
+
+.main { background:url(../images/paper_bg.jpg) repeat-y; }
+.main .content {padding:0 40px 50px;  background:url(../images/pager_btm.png) no-repeat 0 100%; position:relative; bottom:-10px}
+
+.pagination {padding:20px 0; color:#a06d41}
+.pagination a {font-weight:bold; text-decoration:none; margin:0 1px}
+.pagination a.actived {color:#a06d41}
+.pagination a:hover, .news .item .comm a:hover {text-decoration:underline}
+
+.news { background:url(../images/hr.png) no-repeat;}
+.news .item {padding:20px 0 25px; background:url(../images/hr.png) 0 100% no-repeat; }
+.news .item h3 {float:left; width:600px}
+.news .item .date {float:right; width:120px; text-align:right; padding-top:3px; color:#a06d41; font-weight:bold}
+.news .item .news_text {clear:both; padding:10px 0}
+.news .item .comm {float:right; color:#a06d41}
+.news .item .comm a {text-decoration:none; font-weight:bold}
+
+#footer {color:#a5a4a4; padding-bottom:15px}
+#footer .foot_menu {width:615px; background:#666866; border:solid 1px #585857; margin:15px auto; padding:5px; text-align:center}
+#footer .foot_menu a {color:#fff; text-decoration:none; margin:0 10px}
+#footer .foot_menu a.actived, #footer .foot_menu a:hover {color:#000}
+#footer .copyright {background:url(../images/ico-copy.gif) 0 5px no-repeat; padding:0 0 10px 30px; float:left; font-family:"Times New Roman", Times, serif}
+
+
+.clear, .wrap {clear:both}
+.right {float:right}
+.left {float:left}

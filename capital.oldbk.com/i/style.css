@@ -1,0 +1,26 @@
+#page-wrapper .auth-block.no {
+    background: none;
+}
+#page-wrapper .auth-block.no .inner-auth {
+    display: none;
+}
+#page-wrapper .auth-block.no .hint-block {
+    top: 0;
+}
+.spoiler-block {
+    cursor: pointer;
+}
+#page-wrapper tr:hover > th > .spoiler-down {
+    background-image: url("http://i.oldbk.com/i/images/buttons/btt3.png");
+}
+#page-wrapper tr:hover > th > .spoiler-up {
+    background-image: url("http://i.oldbk.com/i/images/buttons/btt3b.png");
+}
+
+#page-wrapper #phantom-zone .auth-block {
+    margin-top: 20px;
+}
+
+.button-big#save-phantom {
+    font-family: Tahoma;
+}

@@ -1,0 +1,162 @@
+body {
+    font-size: .75rem;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #7c6547;
+}
+
+a:link {
+    text-decoration: none;
+    color: #7c6547;
+}
+
+.menu a:hover {
+    padding-left: 5px;
+}
+
+.header {
+    height: 258px;
+    background: url(/eassets/i/header-full-transparent.png) no-repeat top center;
+}
+
+.footer, .footer-body {
+    height: 81px;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    font-size: .65rem;
+}
+
+.kp-class-all {
+    background-color: #ece6d8;
+    padding: 0;
+    margin-top: 0;
+    width: 1018px;
+}
+
+.kp-border .border-line-top {
+    top: 0;
+    height: 25px;
+}
+
+.kp-border .border-line-right {
+    right: 0;
+}
+
+.kp-border .border-line-left {
+    left: 0;
+}
+
+.kp-border .border-ugol-left-bt {
+    left: -21px;
+}
+
+.kp-border .border-ugol-right-bt {
+    right: -21px;
+    bottom: -23px;
+    overflow: no-display;
+}
+
+.im-60 {
+    margin-top: 0;
+}
+
+.menu {
+    vertical-align: top;
+    text-align: left;
+    font-size: .7rem;
+    font-weight: bold;
+    color: #7c6547;
+    /*font-family: tahoma, serif;*/
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.menu_cat {
+    height: 50px;
+    vertical-align: top;
+    text-align: center;
+    background: url(/eassets/i/menu_category.png) no-repeat top center;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #911717;
+    /*font-family: tahoma, serif;*/
+    padding-top: 12px;
+}
+
+.table_library {
+    width: 100%;
+    border: 1px solid #cec9b5;
+}
+
+.table_library_one {
+    width: 100%;
+    border: 1px solid #cec9b5;
+}
+
+table.table_library tr:nth-child(odd) {
+    background: #E6E2CE
+}
+
+table.table_library tr:nth-child(even) {
+    background: #F3F1E7
+}
+
+.sidebar {
+    height: 100%;
+    /*width: auto;*/
+    max-width: 300px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: none;
+    background-color: #ece6d8;
+}
+
+.sidebar.toggled {
+    display: block;
+}
+
+.sidebar .kp-bk-left {
+    width: 60px;
+    height: 100%;
+}
+
+.overflow-x-scroll {
+    overflow-x: auto;
+}
+
+#sidebarCollapse {
+    cursor: pointer;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 5px;
+    top: 0;
+    z-index: 5;
+}
+
+#sidebarCollapse.opened {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#mainContent img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+}

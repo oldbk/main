@@ -1,0 +1,4 @@
+<div>
+    <div>Ваш ключ: {{ key }}</div>
+    <div>Прямой <strong><a href="https://oldbk.com/encicl/dressroom/index.html?key={{ key }}" target="_blank">линк</a></strong></div>
+</div>

@@ -1,0 +1,14 @@
+<div>
+    <h6>Повысить уровень</h6>
+    <ul class="list_one">
+        <li class="art-level-block">
+            <img src="" data-bind="visible: art_level().checkLevel(1), click: art_level().click(1), attr:{src: art_level().image('8')}, css: art_level().num() >= 1 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_level().checkLevel(2), click: art_level().click(2), attr:{src: art_level().image('9')}, css: art_level().num() >= 2 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_level().checkLevel(3), click: art_level().click(3), attr:{src: art_level().image('10')}, css: art_level().num() >= 3 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_level().checkLevel(4), click: art_level().click(4), attr:{src: art_level().image('11')}, css: art_level().num() >= 4 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_level().checkLevel(5), click: art_level().click(5), attr:{src: art_level().image('12')}, css: art_level().num() >= 5 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_level().checkLevel(6), click: art_level().click(6), attr:{src: art_level().image('13')}, css: art_level().num() >= 6 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_level().checkLevel(7), click: art_level().click(7), attr:{src: art_level().image('14')}, css: art_level().num() >= 7 ? 'select' : 'unselect'">
+        </li>
+    </ul>
+</div>

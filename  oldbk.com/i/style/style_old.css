@@ -1,0 +1,368 @@
+* {margin: 0; padding: 0; outline: none;}
+img {
+	border:none;
+}
+body {
+	background: #161718;
+	font: 12px Tahoma; color: #000;
+}
+
+H1.main { font-weight: bold; font-size: 1.1em; text-align:center;}
+
+h2 {
+	background-image:url('http://i.oldbk.com/i/main/h1.jpg');
+	height: 53px;
+	line-height: 49px;
+	text-align: center;
+	color: #850404;
+	font-size: 17px;
+}
+.carrier {
+	background: url('http://i.oldbk.com/i/main/header.jpg') no-repeat center top;
+}
+
+.carrier1 {
+	background: url('http://i.oldbk.com/i/main/footer1.jpg') no-repeat center bottom;
+	padding-bottom: 20px;
+}
+.wrapper {
+	width: 992px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url('http://i.oldbk.com/i/main/header1.jpg') no-repeat left top;
+}
+.header {
+	height: 278px;
+}
+.desc {
+	color: #c5b19b;
+	font-size: 11px;
+	font-weight: bold;
+    position: relative;
+    top: 6px;
+    left: 53px;
+    float: left;
+}
+.ht {
+	color: #c5b19b; font-size: 11px; font-weight: bold;
+	float: right;
+	position: relative; right: 30px; top: 6px;
+	width: 125px;
+	text-align: center;
+}
+.menu {
+	overflow: hidden;
+	clear: both;
+	position: relative;
+	left: 45px;
+}
+.fl {
+	overflow: hidden; clear: both;
+	position: relative;
+	cursor: pointer;
+	top: 16px;
+	z-index: 2;
+	left: 543px;
+}
+.footer2 {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #161719;
+	text-align: middle;
+	color: #22252b;
+}
+.menu li {
+	list-style: none;
+	float:left;
+	padding-right: 15px;
+}
+.menu li a {
+	font-size: 11px; color: #66c40b; font-weight: bold; text-decoration: none;
+}
+.menu li a:hover {
+	color:#7dff00;
+	text-decoration: underline;
+}
+.content1 {
+	background: url('http://i.oldbk.com/i/main/body_t1.jpg') repeat-y left top;
+}
+
+.content {
+	overflow: hidden;
+	background: url('http://i.oldbk.com/i/main/cont1.jpg') no-repeat left top;
+}
+.content p {
+	padding-bottom: 15px;
+	text-align: left;
+}
+.shadow {
+	display:block;
+}
+.left {
+	width: 706px;
+	margin-right: 12px;
+	margin: 9px 0 0 12px;
+	float: left;
+}
+.box_m1 {
+	background: url('http://i.oldbk.com/i/main/box_t.jpg') no-repeat center top;
+}
+.box_m1 .box_b {
+	padding: 16px 30px 16px 24px !important;
+}
+.box_th {
+	background: url('http://i.oldbk.com/i/main/box_m.jpg') repeat-y center top;
+}
+.box_m {
+	background: url('http://i.oldbk.com/i/main/box_ts.jpg') no-repeat center top;
+}
+.box_b {
+	background: url('http://i.oldbk.com/i/main/box_b.jpg') no-repeat center bottom;
+	padding: 18px 16px 12px;
+	overflow: hidden;
+}
+.slider {
+	background: url('http://i.oldbk.com/i/main/slider_bg.jpg') no-repeat center top;
+	height: 137px;
+}
+.sl {
+	float: left;
+	display: block;
+	margin: 25px 0 0 17px;
+}
+.sr {
+	float: right;
+	display: block;
+	border:none;
+	float: left;
+    margin: 24px 0 0 1px;
+}
+.sr, .sl {
+
+}
+.slider ul {
+	overflow:hidden;
+	float:left;
+	margin: 20px 0 0 6px;
+}
+.slider li {
+	float: left;
+	list-style:none;
+	padding-right: 7px;
+}
+.date {
+	float:right;
+	font-weight:bold;
+	padding-bottom: 0!important;
+}
+.comments {
+	color: #894700;
+	font-size: 11px;
+    padding-left: 23px;
+}
+.comments a {
+	text-decoration:none;
+	font-weight:bold;
+	color: #894700;
+}
+.title {
+	clear:both;
+	overflow:hidden;
+	padding: 0 10px 20px;
+}
+.right {
+	width: 247px;
+	overflow: hidden;
+	float: left;
+    margin: 10px 0 0 12px;
+}
+.right .shadow {
+	padding-bottom: 10px;
+}
+.reg {
+	background-image: url('http://i.oldbk.com/i/main/reg_bg.png');
+	height: 135px;
+    padding: 24px 37px;
+    margin-bottom: 5px;
+}
+
+.reg p {
+	padding-bottom: 9px;
+	text-align: left;
+}
+.reg input{
+	background: #adadad;
+	border: 1px solid #60605f;
+	color: #fff;
+	font-size:11px;
+	padding: 3px 8px;
+	width: 90%;
+}
+.box_b input{
+	background: #adadad;
+	border: 1px solid #60605f;
+	color:  #850404;
+	font-weight: bold;
+	font-size:11px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+#reg_btn{
+	background: #adadad;
+	border: 1px solid #60605f;
+	color:  #850404;
+	font-weight: bold;
+	cursor: pointer;
+	font-size:14px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+.box_b textarea{
+	background: #adadad;
+	border: 1px solid #60605f;
+	font-weight: bold;
+	color:  #850404;
+	font-size:11px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.box_b select{
+	background: #adadad;
+	border: 1px solid #60605f;
+	font-weight: bold;
+	color:  #850404;
+	font-size:11px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+.reg_in input {
+	background: #eaeaea;
+	border: 1px solid #980202!important;
+	color: #6f6f6f;
+	padding: 0;
+	width: 66%;
+	cursor: pointer;
+}
+
+.reg_b {
+	font-weight: bold; color: #000!important;
+	margin-right: 3px;
+    width: 32% !important;
+}
+.reg .registration {
+	background-image:url('http://i.oldbk.com/i/main/reg2.gif');
+	width: 180px; height: 39px;
+	cursor:pointer;
+	border:none;
+	margin-left: -4px;
+}
+.die1 {
+	background:url('http://i.oldbk.com/i/main/die_m.jpg') repeat-y left top;
+}
+.die2 {
+	background:url('http://i.oldbk.com/i/main/die_t.jpg') no-repeat left top;
+	padding: 14px 20px 0;
+}
+.die_st {
+	background: url('http://i.oldbk.com/i/main/die1.png') no-repeat left top;
+	padding: 24px 37px;
+}
+A:link {
+ color:#8e4a01;
+ font-weight: bold;
+ text-decoration: none;
+}
+.cor {
+	margin: 0 auto;
+    position: relative;
+    top: 105px;
+    width: 990px;
+    text-align: center;
+	font-size: 9px; color: #32373B; text-decoration: none;
+}
+A:visited {
+ color:#8e4a01;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+A:hover {
+ color:#a17c55;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+h3 {
+ background-image:url('http://i.oldbk.com/i/main/h1.jpg');
+ height: 53px;
+ line-height: 49px;
+ text-align: center;
+ color: #850404;
+ font-size: 15px;
+}
+h3 a {
+ font-size: 14px;
+ color: #850404;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+h3 a:hover {
+ font-size: 15px;
+ color: #cf0200;
+ font-weight: bold;
+ text-decoration: none;
+}
+h3 a:visited {
+ font-size: 14px;
+ color: #850404;
+ font-weight: bold;
+ text-decoration: none;
+}
+h4 {
+ text-align: center;
+ color: #101519;
+ font-size: 18px;
+}
+h5 {
+ text-align: center;
+ color: #850404;
+ font-size: 16px;
+}
+h8 {
+ text-align: center;
+ color: #1c334b;
+ font-size: 16px;
+}
+h6 {
+ text-align: left;
+ color: #762020;
+ font: bold 15px tahoma;
+ float:left;
+}
+h7 {
+ text-align: right;
+ color: #762020;
+ font: bold 15px tahoma;
+ float:right;
+}
+#box2 {
+		height: 120px;
+		width: 168px;
+		margin: auto;
+		cursor: pointer;
+}
+.footer {
+	height: 186px;
+	background: url('http://i.oldbk.com/i/main/footer.jpg') no-repeat right top;
+	background-position: top;
+}
+
+.footert{
+    text-align: center;
+    bottom: 5px;
+}
+
+table { text-align: left;}

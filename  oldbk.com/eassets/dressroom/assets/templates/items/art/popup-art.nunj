@@ -1,0 +1,367 @@
+<div class="modal fade" id="change-art" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Создание прототипа для артефакта</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12" style="width: 700px;">
+                        <div class="row">
+                            <div class="col-6" id="left-block">
+                                <div class="img-block">
+                                    <img src="" data-bind="attr:{src: image}">
+                                </div>
+                                <div data-bind="visible: can.modf() && (access().mf == true || modf_info().isMF())">
+                                    {% include "popup-art-modification.nunj" %}
+                                </div>
+                                <div data-bind="visible: can.podgon() && modf_info().isMF() && (access().podgon == true || podgon().num() > 0)">
+                                    {% include "popup-art-podgon.nunj" %}
+                                </div>
+                                <div data-bind="visible: modf_info().isMF() && have.stats() && (access().u == true || u() == true)">
+                                    {% include "popup-art-usil.nunj" %}
+                                </div>
+                            </div>
+                            <div class="col-6" id="right-block">
+                                <strong>Требуется минимальное:</strong>
+                                <ul class="list_one">
+                                    <li data-bind="visible: need().level() > 0">
+                                        Уровень: <span data-bind="text: need().level"></span>
+                                    </li>
+                                    <li data-bind="visible: need().class() > 0">
+                                        Класс: <strong data-bind="text: need().className()"></strong>
+                                    </li>
+                                    <li data-bind="visible: total.need('strange') > 0">
+                                        Сила: <span data-bind="text: total.need('strange')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('agility') > 0">
+                                        Ловкость: <span data-bind="text: total.need('agility')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('intuition') > 0">
+                                        Интуиция: <span data-bind="text: total.need('intuition')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('endurance') > 0">
+                                        Выносливость: <span data-bind="text: total.need('endurance')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('intellect') > 0">
+                                        Интеллект: <span data-bind="text: total.need('intellect')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('wisdom') > 0">
+                                        Мудрость: <span data-bind="text: total.need('wisdom')"></span>
+                                    </li>
+
+                                    <li data-bind="visible: total.need('knife') > 0">
+                                        Мастерство владения ножами и кастетами: <span data-bind="text: total.need('knife')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('ax') > 0">
+                                        Мастерство владения топорами и секирами: <span data-bind="text: total.need('ax')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('baton') > 0">
+                                        Мастерство владения дубинами и булавами: <span data-bind="text: total.need('baton')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('sword') > 0">
+                                        Мастерство владения мечами: <span data-bind="text: total.need('sword')"></span>
+                                    </li>
+
+                                    <li data-bind="visible: total.need('fire') > 0">
+                                        Мастерство владения стихией Огня: <span data-bind="text: total.need('fire')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('water') > 0">
+                                        Мастерство владения стихией Воды: <span data-bind="text: total.need('water')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('earth') > 0">
+                                        Мастерство владения стихией Земли: <span data-bind="text: total.need('earth')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('air') > 0">
+                                        Мастерство владения стихией Воздуха: <span data-bind="text: total.need('air')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('grey') > 0">
+                                        Мастерство владения серой магией: <span data-bind="text: total.need('grey')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('light') > 0">
+                                        Мастерство владения магией Света: <span data-bind="text: total.need('light')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.need('dark') > 0">
+                                        Мастерство владения магией Тьмы: <span data-bind="text: total.need('dark')"></span>
+                                    </li>
+
+                                    <li data-bind="visible: total.need('gender') == 1">
+                                        Пол: Женский
+                                    </li>
+                                    <li data-bind="visible: total.need('gender') == 2">
+                                        Пол: Мужской
+                                    </li>
+
+                                </ul>
+                                <strong>Действует на:</strong>
+                                <ul class="list_one">
+                                    <li>
+                                        <label>
+                                            Уровень жизни: <span data-bind="text: total.give('hp')"></span>
+                                        </label>
+                                        <span class="plus-block">
+                                            <a href="javascript:void(0)" class="plus" data-bind="visible: additional().armor().all() > 0, click: changeArtHP('plus')">+</a>
+                                        </span>
+                                        <span class="minus-block">
+                                            <a href="javascript:void(0)" class="minus" data-bind="visible: additional().hp() > 0, click: changeArtHP('minus')">-</a>
+                                        </span>
+                                    </li>
+                                    <li style="color:#800000;">
+                                        Выберите желаемое количество добавочных НР и брони. Можно увеличить НР за счет брони или наоборот.
+                                    </li>
+                                    <li data-bind="visible: total.give('mp') > 0">
+                                        Уровень маны: <span data-bind="text: total.give('mp')"></span>
+                                    </li>
+
+                                    <li data-bind="visible: total.give('min_damage') > 0">
+                                        Минимальное наносимое повреждение: <span data-bind="text: total.give('min_damage')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('max_damage') > 0">
+                                        Максимальное наносимое повреждение: <span data-bind="text: total.give('max_damage')"></span>
+                                    </li>
+
+                                    <li data-bind="visible: total.give('bonus', 'craft') > 0">
+                                        Бонус мастерства: <span data-bind="text: total.give('bonus', 'craft')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('bonus', 'craftsu') > 0">
+                                        Сокращает время производства на: <span data-bind="text: total.give('bonus', 'craftsu')"></span>
+                                    </li>
+
+                                    <!-- region Статы -->
+                                    <li data-bind="visible: total.free.stats(), css: total.free.stats() - additional().total.stats() > 0 ? 'green' : 'red'" class="">
+                                        Доступно для распределения: <span data-bind="text: total.free.stats() - additional().total.stats()"></span>
+                                    </li>
+                                    <li data-bind="visible: total.free.stats()">
+                                        <div class="hr"></div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.stats() < 2 || access().stats.strange() == true) && access().checkClass.stats('strange'), checked: access().stats.strange">
+                                        <label for="additional_strange">
+                                            Сила: <span data-bind="text: base.give('strange')"></span>
+                                        </label>
+                                        <span data-bind="visible: total.free.stats() && base.give('strange') > 0 && access().checkClass.stats('strange')">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().strange, value: additional().strange" id="additional_strange" type="text" />
+                                            <span class="percent" style="margin-left: 5px">
+                                                = <span data-bind="text: total.give('strange')"></span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.stats() < 2 || access().stats.agility() == true) && access().checkClass.stats('agility'), checked: access().stats.agility">
+                                        <label for="additional_agility">
+                                            Ловкость: <span data-bind="text: base.give('agility')"></span>
+                                        </label>
+                                        <span data-bind="visible: total.free.stats() && base.give('agility') > 0 && access().checkClass.stats('agility')">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().agility, value: additional().agility" id="additional_agility" type="text" />
+                                            <span class="percent" style="margin-left: 5px">
+                                                = <span data-bind="text: total.give('agility')"></span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.stats() < 2 || access().stats.intuition() == true) && access().checkClass.stats('intuition'), checked: access().stats.intuition">
+                                        <label for="additional_intuition">
+                                            Интуиция: <span data-bind="text: base.give('intuition')"></span>
+                                        </label>
+                                        <span data-bind="visible: total.free.stats() && base.give('intuition') > 0 && access().checkClass.stats('intuition')">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().intuition, value: additional().intuition" id="additional_intuition" type="text" />
+                                            <span class="percent" style="margin-left: 5px">
+                                                = <span data-bind="text: total.give('intuition')"></span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.stats() < 2 || access().stats.intellect() == true) && access().checkClass.stats('intellect'), checked: access().stats.intellect">
+                                        <label for="additional_intellect">
+                                            Интеллект: <span data-bind="text: base.give('intellect')"></span>
+                                        </label>
+                                        <span data-bind="visible: total.free.stats() && base.give('intellect') > 0 && access().checkClass.stats('intellect')">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().intellect, value: additional().intellect" id="additional_intellect" type="text" />
+                                            <span class="percent" style="margin-left: 5px">
+                                                = <span data-bind="text: total.give('intellect')"></span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.stats() < 2 || access().stats.wisdom() == true) && access().checkClass.stats('wisdom'), checked: access().stats.wisdom">
+                                        <label for="additional_wisdom">
+                                            Мудрость: <span data-bind="text: base.give('wisdom')"></span>
+                                        </label>
+                                        <span data-bind="visible: total.free.stats() && base.give('wisdom') > 0 && access().checkClass.stats('wisdom')">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().wisdom, value: additional().wisdom" id="additional_wisdom" type="text" />
+                                            <span class="percent" style="margin-left: 5px">
+                                                = <span data-bind="text: total.give('wisdom')"></span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li style="color:#800000;">
+                                        Выберите два стата, в которые будет возможно распределять свободные увеличения в артефакте.
+                                    </li>
+                                    <!-- endregion -->
+
+                                    <!-- region Модификаторы -->
+                                    <li data-bind="visible: total.free.mf(), css: total.free.mf() - additional().total.mf() > 0 ? 'green' : 'red'" class="">
+                                        Доступно для распределения: <span data-bind="text: total.free.mf() - additional().total.mf()"></span>
+                                    </li>
+                                    <li data-bind="visible: total.free.stats()">
+                                        <div class="hr"></div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.mf() < 2 || access().modf.critical() == true) && access().checkClass.modf('critical'), checked: access().modf.critical">
+                                        <label for="additional_critical">
+                                            Критических ударов: <span data-bind="text: base.give('critical')"></span>%
+                                        </label>
+                                        <span data-bind="visible: total.free.mf() && base.give('critical') > 0 && access().checkClass.modf('critical'),">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().critical, value: additional().critical" id="additional_critical" type="text" />
+                                            <span class="percent">%</span>
+                                            = <span data-bind="text: total.give('critical')"></span>%
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.mf() < 2 || access().modf.p_critical() == true) && access().checkClass.modf('p_critical'), checked: access().modf.p_critical">
+                                        <label for="additional_p_critical">
+                                            Против крит. ударов: <span data-bind="text: base.give('p_critical')"></span>%
+                                        </label>
+                                        <span data-bind="visible: total.free.mf() && base.give('p_critical') > 0 && access().checkClass.modf('p_critical'),">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().p_critical, value: additional().p_critical" id="additional_p_critical" type="text" />
+                                            <span class="percent">%</span>
+                                            = <span data-bind="text: total.give('p_critical')"></span>%
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.mf() < 2 || access().modf.flee() == true) && access().checkClass.modf('flee'), checked: access().modf.flee">
+                                        <label for="additional_flee">
+                                            Увертливости: <span data-bind="text: base.give('flee')"></span>%
+                                        </label>
+                                        <span data-bind="visible: total.free.mf() && base.give('flee') > 0 && access().checkClass.modf('flee'),">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().flee, value: additional().flee" id="additional_flee" type="text" />
+                                            <span class="percent">%</span>
+                                            = <span data-bind="text: total.give('flee')"></span>%
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: (access().can.mf() < 2 || access().modf.p_flee() == true) && access().checkClass.modf('p_flee'), checked: access().modf.p_flee">
+                                        <label for="additional_p_flee">
+                                            Против увертливости: <span data-bind="text: base.give('p_flee')"></span>%
+                                        </label>
+                                        <span data-bind="visible: total.free.mf() && base.give('p_flee') > 0 && access().checkClass.modf('p_flee')">
+                                            <span class="float-left percent" style="margin-right: 5px;">+</span>
+                                            <input data-bind="numeric: additional().p_flee, value: additional().p_flee" id="additional_p_flee" type="text" />
+                                            <span class="percent">%</span>
+                                            = <span data-bind="text: total.give('p_flee')"></span>%
+                                        </span>
+                                    </li>
+                                    <li style="color:#800000;">
+                                        Выберите два модификатора, в которые будет возможно распределять свободные увеличения в артефакте.
+                                    </li>
+                                    <!-- endregion -->
+
+                                    <!-- region Владения оружием -->
+                                    <li data-bind="visible: total.give('knife') > 0">
+                                        Мастерство владения ножами и кастетами: <span data-bind="text: total.give('knife')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('ax') > 0">
+                                        Мастерство владения топорами и секирами: <span data-bind="text: total.give('ax')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('baton') > 0">
+                                        Мастерство владения дубинами и булавами: <span data-bind="text: total.give('baton')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('sword') > 0">
+                                        Мастерство владения мечами: <span data-bind="text: total.give('sword')"></span>
+                                    </li>
+                                    <!-- endregion -->
+
+                                    <!-- region Владения магией -->
+                                    <li data-bind="visible: total.free.m_possession(), css: total.free.m_possession() - additional().total.m_possession() > 0 ? 'green' : 'red'" class="">
+                                        Доступно для распределения: <span data-bind="text: total.free.m_possession() - additional().total.m_possession()"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('fire') > 0 || total.free.m_possession() - additional().total.m_possession() > 0">
+                                        <label class="big" for="additional_fire">
+                                            Мастерство владения стихией Огня: <span data-bind="text: base.give('fire')"></span>
+                                        </label>
+                                    </li>
+                                    <li data-bind="visible: total.give('water') > 0 || total.free.m_possession() - additional().total.m_possession() > 0">
+                                        <label class="big" for="additional_water">
+                                            Мастерство владения стихией Воды: <span data-bind="text: base.give('water')"></span>
+                                        </label>
+                                    </li>
+                                    <li data-bind="visible: total.give('earth') > 0 || total.free.m_possession() - additional().total.m_possession() > 0">
+                                        <label class="big" for="additional_earth">
+                                            Мастерство владения стихией Земли: <span data-bind="text: base.give('earth')"></span>
+                                        </label>
+                                    </li>
+                                    <li data-bind="visible: total.give('air') > 0 || total.free.m_possession() - additional().total.m_possession() > 0">
+                                        <label class="big" for="additional_air">
+                                            Мастерство владения стихией Воздуха: <span data-bind="text: base.give('air')"></span>
+                                        </label>
+                                    </li>
+                                    <li data-bind="visible: total.give('grey') > 0 || total.free.m_possession() - additional().total.m_possession() > 0">
+                                        <label class="big" for="additional_grey">
+                                            Мастерство владения серой магией: <span data-bind="text: base.give('grey')"></span>
+                                        </label>
+                                    </li>
+                                    <li data-bind="visible: total.give('light') > 0 || total.free.m_possession() - additional().total.m_possession() > 0">
+                                        <label class="big" for="additional_light">
+                                            Мастерство владения магией Света: <span data-bind="text: base.give('light')"></span>
+                                        </label>
+                                    </li>
+                                    <li data-bind="visible: total.give('dark') > 0 || total.free.m_possession() - additional().total.m_possession() > 0">
+                                        <label class="big" for="additional_dark">
+                                            Мастерство владения магией Тьмы: <span data-bind="text: base.give('dark')"></span>
+                                        </label>
+                                    </li>
+                                    <!-- endregion -->
+
+                                    <!-- region Броня -->
+                                    <li data-bind="visible: total.give('armor', 'head') > 0">
+                                        Броня головы: <span data-bind="text: total.give('armor', 'head')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('armor', 'body') > 0">
+                                        Броня корпуса: <span data-bind="text: total.give('armor', 'body')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('armor', 'belt') > 0">
+                                        Броня пояса: <span data-bind="text: total.give('armor', 'belt')"></span>
+                                    </li>
+                                    <li data-bind="visible: total.give('armor', 'feet') > 0">
+                                        Броня ног: <span data-bind="text: total.give('armor', 'feet')"></span>
+                                    </li>
+                                    <!-- endregion -->
+
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: access().can.usil() < 1 || access().usil.damage() == true, checked: access().usil.damage">
+                                        <label>
+                                            3% к макс МФ и 1% к урону
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: access().can.usil() < 1 || access().usil.armor() == true, checked: access().usil.armor">
+                                        <label>
+                                            10% брони
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" data-bind="visible: access().can.usil() < 1 || access().usil.mf() == true, checked: access().usil.mf">
+                                        <label>
+                                            5% к макс МФ
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" data-bind="visible: can.save()">
+                <button id="save-change" type="button" class="btn btn-primary">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>

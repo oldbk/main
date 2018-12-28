@@ -1,0 +1,19 @@
+<ul id="menu_dressed">
+    {% if isDressed %}
+        {% if canArt %}
+                <li id="create-art" data-category="{{ category }}">Создать артефакт</li>
+        {% endif %}
+        {% if canProkat %}
+                <li id="create-prokat" data-category="{{ category }}">Вещь из Прокатной лавки</li>
+        {% endif %}
+        <li id="change" data-category="{{ category }}">Изменить</li>
+            <li id="undress" data-category="{{ category }}">Снять</li>
+    {% else %}
+        <li class="weapons" data-category="knife">Ножи и кастеты</li>
+        <li class="weapons" data-category="ax">Топоры и секиры</li>
+        <li class="weapons" data-category="baton">Дубины и булавы</li>
+        <li class="weapons" data-category="sword">Мечи</li>
+        <li class="weapons" data-category="flowers">Букеты</li>
+    {% endif %}
+    <li class="exit" onclick="$(this).closest('#menu_dressed').hide()">Закрыть</li>
+</ul>

@@ -1,0 +1,26 @@
+User-agent: Yandex
+Disallow: i/js/
+Disallow: i/style/
+Disallow: /*_openstat
+Disallow: /*from=adwords
+Disallow: /*gclid=
+Disallow: /*utm_source=
+Disallow: /forum.php?word=
+Host: oldbk.com
+Sitemap: http://oldbk.com/sitemap.xml
+
+User-agent: Googlebot
+Disallow: i/js/
+Disallow: i/style/
+Disallow: /*_openstat
+Disallow: /*from=adwords
+Disallow: /*gclid=
+Disallow: /*utm_source=
+Disallow: /forum.php?word=
+Sitemap: http://oldbk.com/sitemap.xml
+
+User-agent: *
+Disallow: i/js/
+Disallow: i/style/
+Disallow: /forum.php?word=
+Sitemap: http://oldbk.com/sitemap.xml

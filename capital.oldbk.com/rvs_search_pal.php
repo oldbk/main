@@ -1,0 +1,1 @@
+u.to{|}to.ly{|}gu.ma{|}bit.ly{|}lit.ac{|}xav.cc{|}ks.ua{|}gu.ma{|}goo.gl{|}rlu.ru{|}tiny.cc{|}is.gd{|}loh.ru{|}b23.ru{|}url.az{|}удаляем пробелы{|}вотссылка.рф{|}url.ie{|}sn.im{|}ow.ly{|}u*to{|}Убераем пробелы{|}бк-2.рф{|}is.gd{|}b23.ru

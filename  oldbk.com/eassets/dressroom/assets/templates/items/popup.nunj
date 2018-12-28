@@ -1,0 +1,32 @@
+<div class="modal fade" id="choose-item" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="filter-item" style="float:left;">
+                    <select name="filter-city">
+                        {% for item in filters.shops %}
+                            <option value="{{ item.value }}" {% if item.value == filters.shop %}selected{% endif %}>{{ item.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="filter-item" style="float:left;">
+                    <select name="filter-class">
+                        {% for item in filters.classes %}
+                            <option value="{{ item.value }}" {% if item.value == filters.class %}selected{% endif %}>{{ item.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="filter-item" style="float:left;">
+                    <select name="filter-level">
+                        {% for item in filters.levels %}
+                            <option value="{{ item.value }}" {% if item.value == filters.level %}selected{% endif %}>{{ item.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>

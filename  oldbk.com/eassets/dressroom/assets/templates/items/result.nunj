@@ -1,0 +1,167 @@
+<div class="col-12 dress-bg-white">
+    <div class="row">
+        <div class="left-label">
+            <ul class="list_one">
+                <li>
+                    <span class="name">Урон: </span>
+                </li>
+            </ul>
+
+            <ul class="list_one">
+                <li>
+                    <span class="name">У\УУ Бонус:</span>
+                </li>
+            </ul>
+
+            <ul class="list_one">
+                <li>
+                    <span class="name">Мф. критических ударов: </span>
+                </li>
+                <li>
+                    <span class="name">Мф. против крит. ударов:</span>
+                </li>
+                <li>
+                    <span class="name">Мф. увертливости: </span>
+                </li>
+                <li>
+                    <span class="name">Мф. против увертлив.: </span>
+                </li>
+            </ul>
+
+            <ul class="list_one">
+                <li>
+                    <span class="name">Усиление урона: </span>
+                </li>
+                <li>
+                    <span class="name">Усиление максимального мф.: </span>
+                </li>
+                <li>
+                    <span class="name">Усиление брони: 	</span>
+                </li>
+            </ul>
+
+            <ul class="list_one">
+                <li>
+                    <span class="name">Броня головы: </span>
+                </li>
+                <li>
+                    <span class="name">Броня корпуса: 	</span>
+                </li>
+                <li>
+                    <span class="name">Броня пояса: </span>
+                </li>
+                <li>
+                    <span class="name">Броня ног: 	</span>
+                </li>
+                <li>
+                    <span class="name">Эффективность брони: </span>
+                </li>
+            </ul>
+            <!--<ul class="list_one">
+                <li>
+                    <span class="name">Бонус опыта: </span>
+                </li>
+            </ul>-->
+        </div>
+        {% for dummy in dummy_list %}
+            <div class="result-column">
+                <ul class="list_one">
+                    <li>
+                        <span class="name">Кабинка {{ loop.index }} </span>
+                    </li>
+                </ul>
+                <ul class="list_one">
+                    <li>
+                        <strong data-bind="text: total.uron('min')">{{ dummy.total.uron('min') }}</strong>
+                        -
+                        <strong data-bind="text: total.uron('max')">{{ dummy.total.uron('max') }}</strong>
+                        {% if dummy.total.bonus.damage() %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.damage() }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                </ul>
+
+                <ul class="list_one">
+                    <li>
+                        <strong>{{ dummy.uniqueValue() }}</strong>
+                    </li>
+                </ul>
+
+                <ul class="list_one">
+                    <li>
+                        <strong>{{ dummy.total.mf('critical') }}</strong>%
+                        {% if dummy.total.bonus.mf('critical') %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.mf('critical') }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.mf('p_critical') }}</strong>%
+                        {% if dummy.total.bonus.mf('p_critical') %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.mf('p_critical') }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.mf('flee') }}</strong>%
+                        {% if dummy.total.bonus.mf('flee') %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.mf('flee') }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.mf('p_flee') }}</strong>%
+                        {% if dummy.total.bonus.mf('p_flee') %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.mf('p_flee') }}</span>%)</span>
+                        {% endif %}
+                    </li>
+
+                </ul>
+
+                <ul class="list_one">
+                    <li>
+                        <strong>{{ dummy.total.give('increased', 'damage') }}</strong>%
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.give('increased', 'mf') }}</strong>%
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.give('increased', 'armor') }}</strong>%
+                    </li>
+                </ul>
+
+                <ul class="list_one">
+                    <li>
+                        <strong>{{ dummy.total.armor('head') }}</strong>
+                        {% if dummy.total.bonus.armor() %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.armor() }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.armor('body') }}</strong>
+                        {% if dummy.total.bonus.armor() %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.armor() }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.armor('belt') }}</strong>
+                        {% if dummy.total.bonus.armor() %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.armor() }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.armor('feet') }}</strong>
+                        {% if dummy.total.bonus.armor() %}
+                            <span class="green">(+<span>{{ dummy.total.bonus.armor() }}</span>%)</span>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <strong>{{ dummy.total.armorEff(true) }}</strong>
+                    </li>
+                </ul>
+                <!--<ul class="list_one">
+                    <li>
+                        <strong>{{ dummy.total.give('bonus', 'exp') }}</strong>%
+                    </li>
+                </ul>-->
+            </div>
+        {% endfor %}
+    </div>
+</div>

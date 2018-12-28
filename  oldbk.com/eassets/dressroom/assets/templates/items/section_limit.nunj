@@ -1,0 +1,33 @@
+<li class="line-head">
+    <string>Ограничения:</string>
+</li>
+
+{% if item.info.goden > 0 %}
+    <li>
+        Срок годности: <strong>{{ item.info.goden }} дн.</strong>
+    </li>
+{% endif %}
+
+{% if item.id >= 946 and item.id <= 957 %}
+    <li>
+        <small><span style="color: red">Невозможно одновременно надеть более 4-х предметов Ярмарки, в том числе не более одного кольца</span></small>
+    </li>
+    <li>
+        <span style="color:maroon;">Предмет не подлежит модификации</span>
+    </li>
+    <li>
+        <span style="color: maroon;">Предмет не подлежит чарованию</span>
+    </li>
+{% endif %}
+
+{% if item.info.isrep == 0 %}
+    <li>
+        <span style="color: maroon;">Предмет не подлежит ремонту</span>
+    </li>
+{% endif %}
+
+{% if item.info.notsell == 1 %}
+    <li>
+        <span style="color: maroon;">Предмет не подлежит продаже в Гос. магазин</span>
+    </li>
+{% endif %}

@@ -1,0 +1,27 @@
+<li class="line-head">
+    <strong>Усиление:</strong>
+</li>
+
+{% for paramCode, paramName in {'mf': 'Максимального мф.', 'armor': 'Брони', 'damage': 'Урона'} %}
+    {% if item.total.give('increased', paramCode) %}
+        <li>
+            {{ paramName }}: +{{ item.total.give('increased', paramCode) }}%
+        </li>
+    {% elseif item.give.bonus.ab and item.give.bonus.ab[paramCode] > 0 %}
+        <li>
+            {{ paramName }}: +{{ item.total.give('increased', paramCode) }}%
+        </li>
+    {% endif %}
+{% endfor %}
+
+{% if item.give.bonus.elka %}
+    <li>
+        Рунного опыта: +{{ item.give.bonus.elka }}%
+    </li>
+{% endif %}
+
+{% if item.id == 55510351 %}
+    <li>
+        Опыта: +10%
+    </li>
+{% endif %}

@@ -1,0 +1,8 @@
+<?
+if (!($_SESSION['uid'] >0)) { header("Location: index.php"); die(); }
+
+$addstat='mudra';
+$addvalue=2;
+$addtxt='Мудрость';
+include "food_castles.php"
+?>

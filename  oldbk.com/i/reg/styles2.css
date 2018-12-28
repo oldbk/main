@@ -1,0 +1,150 @@
+@charset "windows-1251";
+/* CSS Document */
+* {margin: 0; padding: 0; outline: none;}
+
+img2 {
+	border:none;
+}
+
+img {
+	border:none;
+}
+
+
+body {
+	background: #ededed;
+	font: 12px Tahoma; color: #000;
+	}
+
+.header2 {
+	background: url(head_bg.jpg) no-repeat left top;
+	}
+
+.left_bg2 {
+	background: url(left_bg.jpg) no-repeat right top;
+	}
+	
+.right_bg2 {
+	background: url(right_bg.jpg) no-repeat left top;
+	}
+	
+.cont_bg2 {
+	background: url(cont_bg.jpg) repeat-y left top;
+	padding: 0 20px;
+	}
+	
+.hh1 {
+	font-size: 16px;
+	text-align: center;
+	color: #c10000;
+	}
+
+.hh2 {
+	font-size: 13px;
+	color: #49545a;
+	}
+
+.reg p {
+	padding-bottom: 9px;
+}
+.reg input{
+	background: #adadad;
+	border: 1px solid #60605f;
+	color: #fff;
+	font-size:11px;
+	padding: 3px 8px;
+	width: 90%;
+}
+
+.box_b input{
+	background: #adadad;
+	border: 1px solid #60605f;
+	color:  #850404;
+	font-weight: bold;
+	font-size:11px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+#reg_btn{
+	background: #adadad;
+	border: 1px solid #60605f;
+	color:  #850404;
+	font-weight: bold;
+	cursor: pointer;
+	font-size:14px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+.box_b textarea{
+	background: #adadad;
+	border: 1px solid #60605f;
+	font-weight: bold;
+	color:  #850404;
+	font-size:11px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.box_b select{
+	background: #adadad;
+	border: 1px solid #60605f;
+	font-weight: bold;
+	color:  #850404;
+	font-size:11px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+.reg_in input {
+	background: #eaeaea;
+	border: 1px solid #980202!important;
+	color: #6f6f6f;
+	padding: 0;
+	width: 66%;
+	cursor: pointer;
+}
+
+.reg_b {
+	font-weight: bold; color: #000!important;
+	margin-right: 3px;
+    width: 32% !important;
+}
+.reg .registration {
+	background-image:url('/i/reg/reg_button.png');
+	width: 230px; height: 36px;
+	cursor:pointer;
+	border:none;
+	/*margin-left: -4px;*/
+}
+
+
+A:link {
+ color:#8e4a01;
+ font-weight: bold;
+ text-decoration: none;
+}
+.cor {
+	margin: 0 auto;
+    position: relative;
+    top: 105px;
+    width: 990px;
+    text-align: center;
+	font-size: 9px; color: #32373B; text-decoration: none;
+}
+A:visited {
+ color:#8e4a01;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+A:hover {
+ color:#a17c55;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+#box2 {
+		height: 120px;
+		width: 168px;
+		margin: auto;
+		cursor: pointer;
+}

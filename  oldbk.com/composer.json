@@ -1,0 +1,43 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "2.*",
+    "maximebf/debugbar": "1.*",
+    "sorskod/db": "1.*",
+    "phpfastcache/phpfastcache": "4.3.17",
+    "guzzlehttp/guzzle": "~6.0",
+    "illuminate/database": "5.5.*",
+    "illuminate/events": "5.5.*",
+    "illuminate/hashing": "5.5.*",
+    "illuminate/translation": "5.5.*",
+    "illuminate/validation": "5.5.*",
+    "illuminate/pagination": "5.5.*",
+    "illuminate/cache": "5.5.*",
+    "illuminate/config": "5.5.*",
+    "zeuxisoo/slim-whoops": "0.3.*",
+    "aws/aws-sdk-php": "3.30.2",
+    "ruflin/elastica": "6.0.*",
+    "pragmarx/google2fa": "v2.0.6",
+    "adbario/php-dot-notation": "2.0.0",
+    "quietasice/slim-debugbar": "dev-master",
+    "monolog/monolog": "1.23.0",
+    "league/flysystem": "^1.0"
+  },
+  "require-dev": {
+    "illuminate/log": "5.5.*"
+  },
+  "autoload":{
+    "psr-0":{
+      "components" : ""
+    }
+  }
+}

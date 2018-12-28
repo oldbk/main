@@ -1,0 +1,43 @@
+<?
+if (!($_SESSION['uid'] >0)) { header("Location: index.php"); die(); }
+//$addstat
+//$addvalue
+//$addtxt
+//
+
+	$prof_data=GetUserProfLevels($user); 
+	// Повар      Дополнительный бонус от еды: +...НР      20НР за уровень ремесла
+	if (($prof_data['cooklevel']>0)	and ($addstat=='maxhp') )
+		{
+		$addvalue+=(20*(int)($prof_data['cooklevel']));
+		}
+
+$get_food=mysql_fetch_array(mysql_query("select * from users_bonus where owner='{$user[id]}' ;"));
+
+
+
+if ($user['battle'] > 0) {echo "Не в бою...";}
+elseif ($get_food['finish_time']!='')
+	{
+	 echo "<font color=red>У вас есть похожий эффект!</font>";	
+	}
+elseif ($get_food[$addstat] >= $addvalue)
+	{
+	 echo "<font color=red>Вы уже подкрепились этим...можно попробовать после боя...</font>";	
+	}
+else
+	{
+	mysql_query("INSERT into users_bonus SET ".$addstat."='{$addvalue}' , owner='{$user[id]}' ON DUPLICATE KEY UPDATE  ".$addstat."='{$addvalue}' , refresh=refresh+1 ; ");
+
+	 
+		if (mysql_affected_rows()>0)
+					 	{
+					 	if ($addvalue<1) {$addvalue=($addvalue*100); $addvalue.='%'; }
+					 	echo "<font color=red>Вы подкрепились...".$addtxt." +".$addvalue." на бой</font></br>";
+	  					$bet=1;
+						$sbet = 1;
+
+		  				}
+	}
+
+?>

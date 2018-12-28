@@ -1,0 +1,81 @@
+<li class="line-head">
+    <strong>Действует на:</strong>
+</li>
+
+{% if item.total.give('min_damage') > 0 %}
+    <li>
+        Минимальное наносимое повреждение: {{  item.total.give('min_damage') }}
+    </li>
+{% endif %}
+
+    {% if item.total.give('max_damage') > 0 %}
+        <li>
+            Максимальное наносимое повреждение: {{  item.total.give('max_damage') }}
+        </li>
+    {% endif %}
+    {% if item.total.give('bonus', 'craft') > 0 %}
+        <li>
+            Бонус мастерства: {{ item.total.give('bonus', 'craft') }}
+        </li>
+    {% endif %}
+    {% if item.total.give('bonus', 'craftsu') > 0 %}
+        <li>
+            Сокращает время производства на: {{ item.total.give('bonus', 'craftsu') }}
+        </li>
+    {% endif %}
+    {% for paramCode, paramName in {'strange': 'Сила', 'agility': 'Ловкость', 'intuition': 'Интуиция', 'intellect': 'Интеллект', 'wisdom': 'Мудрость'} %}
+        {% if item.total.give(paramCode) %}
+            <li>
+                {{ paramName }}: {{ item.total.give(paramCode) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% for paramCode, paramName in {'hp': 'Уровень жизни', 'mp': 'Уровень маны'} %}
+        {% if item.total.give(paramCode) %}
+            <li>
+                {{ paramName }}: {{ item.total.give(paramCode) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+
+
+    {% for paramCode, paramName in {'critical': 'критических ударов', 'p_critical': 'против крит. ударов', 'flee': 'увертливости', 'p_flee': 'против увертливости'} %}
+        {% if item.total.give(paramCode) %}
+            <li>
+                Мф. {{ paramName }}: {{ item.total.give(paramCode) }}%
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% for paramCode, paramName in {'knife': 'ножами и кастетами', 'ax': 'топорами и секирами', 'baton': 'дубинами и булавами', 'sword': 'мечами'} %}
+        {% if item.total.give(paramCode) %}
+            <li>
+                Мастерство владения {{ paramName }}: {{ item.total.give(paramCode) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% for paramCode, paramName in {'fire': 'стихией Огня', 'water': 'стихией Воды', 'earth': 'стихией Земли', 'air': 'стихией Воздуха', 'grey': 'серой магией', 'light': 'магией Света', 'dark': 'магией Тьмы'} %}
+        {% if item.total.give(paramCode) %}
+            <li>
+                Мастерство владения {{ paramName }}: {{ item.total.give(paramCode) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% for paramCode, paramName in {'head': 'головы', 'body': 'корпуса', 'belt': 'пояса', 'feet': 'ног'} %}
+        {% if item.total.give('armor', paramCode) %}
+            <li>
+                Броня {{ paramName }}: {{ item.total.give('armor', paramCode) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% for paramCode, paramName in {'stats': 'увеличений', 'mf': 'увеличений мф'} %}
+        {% if item.total.free[paramCode]() %}
+            <li>
+                Возможных {{ paramName }}: {{ item.total.free[paramCode]() - item.additional.total[paramCode]() }}
+            </li>
+        {% endif %}
+    {% endfor %}

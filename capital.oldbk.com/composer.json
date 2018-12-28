@@ -1,0 +1,43 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "geoip2/geoip2": "2.0",
+    "lusitanian/oauth": "v0.8.1",
+    "slim/slim": "2.*",
+    "maximebf/debugbar": "1.*",
+    "sorskod/db": "1.*",
+    "quietasice/slim-debugbar": "dev-master",
+    "okwinza/cloudflare-api": "1.0.2",
+    "quietasice/phpfastcache": "3.0.24",
+    "guzzle/guzzle": "~3.9",
+    "phpfastcache/phpfastcache": "4.3.16",
+    "hellogerard/jobby": "v2.0.13",
+    "intervention/image": "2.3.7",
+    "php-amqplib/php-amqplib": "^2.6",
+    "ruflin/elastica": "5.3.0",
+    "illuminate/database": "v5.4.17",
+    "illuminate/events": "v5.4.17",
+    "monolog/monolog": "1.22.1",
+    "pragmarx/google2fa": "v2.0.6",
+    "google/apiclient-services": "v0.59",
+    "google/apiclient": "v2.2.1",
+    "yadakhov/insert-on-duplicate-key": "dev-master",
+    "mailgun/mailgun-php": "^2.6",
+    "php-http/curl-client": "^1.7",
+    "guzzlehttp/psr7": "^1.5"
+  },
+  "autoload":{
+    "psr-0":{
+      "components" : ""
+    }
+  }
+}

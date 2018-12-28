@@ -1,0 +1,6 @@
+User-agent: Yandex
+Disallow: 
+Host: capitalcity.oldbk.com
+
+User-agent: *
+Disallow:

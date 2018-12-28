@@ -1,0 +1,49 @@
+<li class="line-head">
+    <strong>Требуется минимальное:</strong>
+</li>
+
+{% if item.total.need('level') %}
+    <li>
+        Уровень: {{ item.total.need('level') }}
+    </li>
+{% endif %}
+
+{% if item.need.class and classes[item.need.class] %}
+    <li>
+        Класс: <strong>{{ classes[item.need.class] }}</strong>
+    </li>
+{% endif %}
+
+{% for paramCode, paramName in {'strange': 'Сила', 'agility': 'Ловкость', 'intuition': 'Интуиция', 'endurance': 'Выносливость', 'intellect': 'Интеллект', 'wisdom': 'Мудрость'} %}
+    {% if item.total.need(paramCode) %}
+        <li>
+            {{ paramName }}: {{ item.total.need(paramCode) }}
+        </li>
+    {% endif %}
+{% endfor %}
+
+    {% for paramCode, paramName in {'knife': 'ножами и кастетами', 'ax': 'топорами и секирами', 'baton': 'дубинами и булавами', 'sword': 'мечами'} %}
+        {% if item.total.need(paramCode) %}
+            <li>
+                Мастерство владения {{ paramName }}: {{ item.total.need(paramCode) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% for paramCode, paramName in {'fire': 'стихией Огня', 'water': 'стихией Воды', 'earth': 'стихией Земли', 'air': 'стихией Воздуха', 'grey': 'серой магией', 'light': 'магией Света', 'dark': 'магией Тьмы'} %}
+        {% if item.total.need(paramCode) %}
+            <li>
+                Мастерство владения {{ paramName }}: {{ item.total.need(paramCode) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% if item.need.gender === 1 %}
+        <li>
+            Пол: Женский
+        </li>
+    {% elseif item.need.gender === 2 %}
+        <li>
+            Пол: Мужской
+        </li>
+    {% endif %}

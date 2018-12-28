@@ -1,0 +1,243 @@
+/*Слайдер на главной(правая колнка)*/
+#simple_slides {
+    position: relative;
+    height: 180px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.simple_slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+slider top
+ */
+.carousel {
+    height: 139px;
+}
+
+.carousel .item {
+    height: 139px;
+    background-color: #777;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 10px !important;
+    right: 10px !important;
+    left: auto !important;
+    z-index: 15;
+    width: auto !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-align: center;
+    list-style: none;
+}
+
+.carousel-caption2 {
+    position: relative;
+    height: 100%;
+}
+
+.cont_box_bot_com_txt1 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fce9a1;
+    font-weight: bold;
+    line-height: 42px;
+    font-size: 1.775em;
+    font-family: inherit;
+    text-shadow: 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black;
+}
+
+.cont_box_bot_com_txt2 {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    padding-left: 5px;
+    color: white;
+    text-shadow: 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black;
+}
+
+.carousel-indicators  {
+    margin: 0;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    overflow: hidden;
+    text-indent: 9999px;
+    background: url(https://i.oldbk.com/i/action/carousel-list.png) center top no-repeat;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+.carousel-indicators .active {
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    overflow: hidden;
+    text-indent: 9999px;
+    background: url(https://i.oldbk.com/i/action/carousel-list.png) center bottom no-repeat;
+    border: none;
+    margin: 0;
+}
+
+/**
+    Preloader
+ */
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -16px 0 0 -16px;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 30px;
+    color: #fff;
+}
+
+#page-preloader .spinner:before {
+    content: "\f110"
+}
+
+.spinner {
+    -webkit-animation: preloader 1.5s infinite linear;
+    -moz-animation: preloader 1.5s infinite linear;
+    -ms-animation: preloader 1.5s infinite linear;
+    -o-animation: preloader 1.5s infinite linear;
+    animation: preloader 1.5s infinite linear;
+}
+
+.event_week_box {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    margin: 0px 8px 0;
+    padding: 0px 0 0px;
+    font-weight: bold;
+    color: #911717;
+    line-height: 30px;
+    height: 125px;
+    overflow: hidden;
+}
+
+.event_week_text {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    margin: -53px 0 0;
+    padding: 0px 0 0px;
+    font-weight: bold;
+    color: #FCE9A1;
+    line-height: 30px;
+    height: 50px;
+    overflow: hidden;
+}
+
+@-webkit-keyframes preloader {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes preloader {
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes preloader {
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes preloader {
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+
+.kp-title-news-name h3 {
+    font-size: 1.2em;
+}
+
+.kp-news-content img {
+    vertical-align: baseline;
+}
+
+@media screen and (max-width: 769px) {
+
+    .bg_img_main {
+        background-image: none;
+    }
+
+    .cont_box_bot_com_txt1 {
+        font-size: 1.1em;
+    }
+
+    .cont_box_bot_com_txt2 {
+        font-size: 0.7em;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    #rc-imageselect, .g-recaptcha {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}

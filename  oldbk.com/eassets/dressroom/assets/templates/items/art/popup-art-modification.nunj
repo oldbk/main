@@ -1,0 +1,90 @@
+<div>
+    <h6>Модификация</h6>
+    <ul class="list_one">
+        <li>
+            <label for="mf_hp">Добавить ХП</label>
+            <input disabled id="mf_hp" data-bind="numeric: modf_info().hp, value: modf_info().hp" type="text">
+        </li>
+        <li>
+            <label for="mf_stat">Добавить Статы</label>
+            <input disabled id="mf_stat" data-bind="numeric: modf_info().stats, value: modf_info().stats" type="text">
+        </li>
+        <li>
+            <label for="mf_armor">Добавить Бронь</label>
+            <input disabled id="mf_armor" data-bind="numeric: modf_info().armor, value: modf_info().armor" type="text">
+        </li>
+
+        <!-- region Статы -->
+        <li data-bind="visible: modf_info().stats() > 0, css: (modf_info().stats() - modf_info().give().total.stats()) > 0 ? 'green' : 'red'" class="">
+            Доступно для распределения: <span data-bind="text: modf_info().stats() - modf_info().give().total.stats()"></span>
+        </li>
+        <li data-bind="visible: modf_info().stats() > 0">
+            <div class="hr"></div>
+        </li>
+        <li data-bind="visible: modf_info().stats() > 0 && give().strange() > 0">
+            <label for="mf_strange">
+                Сила: <span data-bind="text: give().strange()"></span>
+            </label>
+            <span data-bind="visible: modf_info().stats() > 0">
+                <span class="float-left percent" style="margin-right: 5px;">+</span>
+                <input data-bind="numeric: modf_info().give().strange, value: modf_info().give().strange" id="mf_strange" type="text" />
+                <span class="percent" style="margin-left: 5px">
+                    = <span data-bind="text: give().strange() + parseInt(modf_info().give().strange())"></span>
+                </span>
+            </span>
+        </li>
+        <li data-bind="visible: modf_info().stats() > 0 && give().agility() > 0">
+            <label for="mf_agility">
+                Ловкость: <span data-bind="text: give().agility()"></span>
+            </label>
+            <span data-bind="visible: modf_info().stats() > 0">
+                <span class="float-left percent" style="margin-right: 5px;">+</span>
+                <input data-bind="numeric: modf_info().give().agility, value: modf_info().give().agility" id="mf_agility" type="text" />
+                <span class="percent" style="margin-left: 5px">
+                    = <span data-bind="text: give().agility() + parseInt(modf_info().give().agility())"></span>
+                </span>
+            </span>
+        </li>
+        <li data-bind="visible: modf_info().stats() > 0 && give().intuition() > 0">
+            <label for="mf_intuition">
+                Интуиция: <span data-bind="text: give().intuition()"></span>
+            </label>
+            <span data-bind="visible: modf_info().stats() > 0">
+                <span class="float-left percent" style="margin-right: 5px;">+</span>
+                <input data-bind="numeric: modf_info().give().intuition, value: modf_info().give().intuition" id="mf_intuition" type="text" />
+                <span class="percent" style="margin-left: 5px">
+                    = <span data-bind="text: give().intuition() + parseInt(modf_info().give().intuition())"></span>
+                </span>
+            </span>
+        </li>
+        <li data-bind="visible: modf_info().stats() > 0 && give().intellect() > 0">
+            <label for="mf_intellect">
+                Интеллект: <span data-bind="text: give().intellect()"></span>
+            </label>
+            <span data-bind="visible: modf_info().stats() > 0">
+                <span class="float-left percent" style="margin-right: 5px;">+</span>
+                <input data-bind="numeric: modf_info().give().intellect, value: modf_info().give().intellect" id="mf_intellect" type="text" />
+                <span class="percent" style="margin-left: 5px">
+                    = <span data-bind="text: give().intellect() + parseInt(modf_info().give().intellect())"></span>
+                </span>
+            </span>
+        </li>
+        <li data-bind="visible: modf_info().stats() > 0 && give().wisdom() > 0">
+            <label for="mf_wisdom">
+                Мудрость: <span data-bind="text: give().wisdom()"></span>
+            </label>
+            <span data-bind="visible: modf_info().stats() > 0">
+                <span class="float-left percent" style="margin-right: 5px;">+</span>
+                <input data-bind="numeric: modf_info().give().wisdom, value: modf_info().give().wisdom" id="mf_wisdom" type="text" />
+                <span class="percent" style="margin-left: 5px">
+                    = <span data-bind="text: give().wisdom() + parseInt(modf_info().give().wisdom())"></span>
+                </span>
+            </span>
+        </li>
+        <!-- endregion -->
+
+        <li style="text-align: center" data-bind="visible: access().mf == true">
+            <a href="javascript:void(0);" data-bind="click: mf(true)">Модифицировать</a> | <a href="javascript:void(0);" data-bind="click: mf(false)">Сбросить</a>
+        </li>
+    </ul>
+</div>

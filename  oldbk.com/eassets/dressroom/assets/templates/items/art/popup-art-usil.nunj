@@ -1,0 +1,8 @@
+<div>
+    <h6>Улучшениe</h6>
+    <ul class="list_one">
+        <li class="uu-block" style="text-align: center;">
+            <img src="https://i.oldbk.com/i/sh/scroll_upunik2.gif" data-bind="visible: (u() || access.u == true), click: access.u == true ? u(!u()) : function(){}, css: u() ? 'select' : 'unselect'">
+        </li>
+    </ul>
+</div>

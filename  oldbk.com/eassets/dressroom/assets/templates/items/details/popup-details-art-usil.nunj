@@ -1,0 +1,299 @@
+<div>
+    <h6>Улучшение артефакта</h6>
+    <ul class="list_one">
+        <li class="art-usil-block">
+            <img src="" data-bind="click: art_usil().click(1), attr:{src: art_usil().image('1')}, css: art_usil().levels[1].active() == true ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_usil().levels[1].active() == true, click: art_usil().click(2), attr:{src: art_usil().image('2')}, css: art_usil().levels[2].active() == true ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_usil().levels[2].active() == true, click: art_usil().click(3), attr:{src: art_usil().image('3')}, css: art_usil().levels[3].active() == true ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_usil().levels[3].active() == true, click: art_usil().click(4), attr:{src: art_usil().image('4')}, css: art_usil().levels[4].active() == true ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_usil().levels[4].active() == true, click: art_usil().click(5), attr:{src: art_usil().image('5')}, css: art_usil().levels[5].active() == true ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: art_usil().levels[5].active() == true, click: art_usil().click(6), attr:{src: art_usil().image('6')}, css: art_usil().levels[6].active() == true ? 'select' : 'unselect'">
+        </li>
+
+        <!-- region Статы -->
+        <li data-bind="visible: art_usil().levels[1].active() == true">
+            <strong>Улучшение I</strong>
+            <ul class="list_one inner-block">
+                <li data-bind="visible: art_usil().levels[1].setup() == false || (art_usil().give().armor().all() > 0 && art_usil().give().hp() > 0)">
+                    <label class="big2">
+                        Броня: <span data-bind="text: art_usil().give().armor().all()"></span> и Уровень жизни: <span data-bind="text: art_usil().give().hp()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[1].setup() == false, click: art_usil().levels[1].setup(1)">+</a>
+                    </span>
+                    <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: (art_usil().give().armor().all() > 0 && art_usil().give().hp() > 0), click: art_usil().levels[1].setup(false)">-</a>
+                    </span>
+                </li>
+
+                <li data-bind="visible: art_usil().levels[1].setup() == false || (art_usil().give().armor().all() > 0 && art_usil().give().hp() == 0)">
+                    <label class="big2">
+                        Броня: <span data-bind="text: art_usil().give().armor().all()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[1].setup() == false, click: art_usil().levels[1].setup(2)">+</a>
+                    </span>
+                    <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().armor().all() > 0, click: art_usil().levels[1].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[1].setup() == false || (art_usil().give().hp() > 0 && art_usil().give().armor().all() == 0)">
+                    <label class="big2">
+                        Уровень жизни: <span data-bind="text: art_usil().give().hp()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[1].setup() == false, click: art_usil().levels[1].setup(3)">+</a>
+                    </span>
+                    <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().hp() > 0, click: art_usil().levels[1].setup(false)">-</a>
+                    </span>
+                </li>
+            </ul>
+        </li>
+        <li data-bind="visible: art_usil().levels[2].active() == true">
+            <strong>Улучшение II</strong>
+            <ul class="list_one inner-block">
+                <li data-bind="visible: art_usil().levels[2].setup() == false || art_usil().give().critical() > 0">
+                    <label class="big2">
+                        Критических ударов: <span data-bind="text: art_usil().give().critical()"></span>%
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[2].setup() == false, click: art_usil().levels[2].setup(1)">+</a>
+                    </span>
+                    <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().critical() > 0, click: art_usil().levels[2].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[2].setup() == false || art_usil().give().p_critical() > 0">
+                    <label class="big2">
+                        Против крит. ударов: <span data-bind="text: art_usil().give().p_critical()"></span>%
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[2].setup() == false, click: art_usil().levels[2].setup(2)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().p_critical() > 0, click: art_usil().levels[2].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[2].setup() == false || art_usil().give().flee() > 0">
+                    <label class="big2">
+                        Увертливости: <span data-bind="text: art_usil().give().flee()"></span>%
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[2].setup() == false, click: art_usil().levels[2].setup(3)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().flee() > 0, click: art_usil().levels[2].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[2].setup() == false || art_usil().give().p_flee() > 0">
+                    <label class="big2">
+                        Против увертливости: <span data-bind="text: art_usil().give().p_flee()"></span>%
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[2].setup() == false, click: art_usil().levels[2].setup(4)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().p_flee() > 0, click: art_usil().levels[2].setup(false)">-</a>
+                    </span>
+                </li>
+            </ul>
+        </li>
+        <li data-bind="visible: art_usil().levels[3].active() == true">
+            <strong>Улучшение III</strong>
+            <ul class="list_one inner-block">
+                <li data-bind="visible: art_usil().levels[3].setup() == false || art_usil().give().strange() > 0">
+                    <label class="big2">
+                        Сила: <span data-bind="text: art_usil().give().strange()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[3].setup() == false, click: art_usil().levels[3].setup(1)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().strange() > 0, click: art_usil().levels[3].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[3].setup() == false || art_usil().give().agility() > 0">
+                    <label class="big2">
+                        Ловкость: <span data-bind="text: art_usil().give().agility()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[3].setup() == false, click: art_usil().levels[3].setup(2)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().agility() > 0, click: art_usil().levels[3].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[3].setup() == false || art_usil().give().intuition() > 0">
+                    <label class="big2">
+                        Интуиция: <span data-bind="text: art_usil().give().intuition()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[3].setup() == false, click: art_usil().levels[3].setup(3)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().intuition() > 0, click: art_usil().levels[3].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[3].setup() == false || art_usil().give().intellect() > 0">
+                    <label class="big2">
+                        Интеллект: <span data-bind="text: art_usil().give().intellect()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[3].setup() == false, click: art_usil().levels[3].setup(4)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().intellect() > 0, click: art_usil().levels[3].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[3].setup() == false || art_usil().give().wisdom() > 0">
+                    <label class="big2">
+                        Мудрость: <span data-bind="text: art_usil().give().wisdom()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[3].setup() == false, click: art_usil().levels[3].setup(5)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().wisdom() > 0, click: art_usil().levels[3].setup(false)">-</a>
+                    </span>
+                </li>
+            </ul>
+        </li>
+        <li data-bind="visible: art_usil().levels[4].active() == true">
+            <strong>Улучшение IV</strong>
+            <ul class="list_one inner-block">
+                <li data-bind="visible: art_usil().levels[4].setup() == false || art_usil().give().knife() > 0,">
+                    <label class="big2">
+                        Мастерство владения ножами и кастетами: <span data-bind="text: art_usil().give().knife()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[4].setup() == false , click: art_usil().levels[4].setup(1)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().knife() > 0, click: art_usil().levels[4].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[4].setup() == false || art_usil().give().ax() > 0,">
+                    <label class="big2">
+                        Мастерство владения топорами и секирами: <span data-bind="text: art_usil().give().ax()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[4].setup() == false , click: art_usil().levels[4].setup(2)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().ax() > 0, click: art_usil().levels[4].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[4].setup() == false || art_usil().give().baton() > 0,">
+                    <label class="big2">
+                        Мастерство владения дубинами и булавами: <span data-bind="text: art_usil().give().baton()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[4].setup() == false , click: art_usil().levels[4].setup(3)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().baton() > 0, click: art_usil().levels[4].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[4].setup() == false || art_usil().give().sword() > 0,">
+                    <label class="big2">
+                        Мастерство владения мечами: <span data-bind="text: art_usil().give().sword()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[4].setup() == false , click: art_usil().levels[4].setup(4)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().sword() > 0, click: art_usil().levels[4].setup(false)">-</a>
+                    </span>
+                </li>
+            </ul>
+        </li>
+        <li data-bind="visible: art_usil().levels[5].active() == true">
+            <strong>Улучшение V</strong>
+            <ul class="list_one inner-block">
+                <li data-bind="visible: art_usil().levels[5].setup() == false || art_usil().give().fire() > 0">
+                    <label class="big2">
+                        Мастерство владения стихией Огня: <span data-bind="text: art_usil().give().fire()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[5].setup() == false, click: art_usil().levels[5].setup(1)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().fire() > 0, click: art_usil().levels[5].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[5].setup() == false || art_usil().give().water() > 0">
+                    <label class="big2">
+                        Мастерство владения стихией Воды: <span data-bind="text: art_usil().give().water()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[5].setup() == false, click: art_usil().levels[5].setup(2)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().water() > 0, click: art_usil().levels[5].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[5].setup() == false || art_usil().give().earth() > 0">
+                    <label class="big2">
+                        Мастерство владения стихией Земли: <span data-bind="text: art_usil().give().earth()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[5].setup() == false, click: art_usil().levels[5].setup(3)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().earth() > 0, click: art_usil().levels[5].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[5].setup() == false || art_usil().give().air() > 0">
+                    <label class="big2">
+                        Мастерство владения стихией Воздуха: <span data-bind="text: art_usil().give().air()"></span>
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[5].setup() == false, click: art_usil().levels[5].setup(4)">+</a>
+                    </span>
+                            <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().air() > 0, click: art_usil().levels[5].setup(false)">-</a>
+                    </span>
+                </li>
+            </ul>
+        </li>
+        <li data-bind="visible: art_usil().levels[6].active() == true">
+            <strong>Улучшение VI</strong>
+            <ul class="list_one inner-block">
+                <li data-bind="visible: art_usil().levels[6].setup() == false || art_usil().give().increased().armor() > 0">
+                    <label class="big2">
+                        Усиление брони: <span data-bind="text: art_usil().give().increased().armor()"></span>%
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[6].setup() == false, click: art_usil().levels[6].setup(1)">+</a>
+                    </span>
+                    <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().increased().armor() > 0, click: art_usil().levels[6].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[6].setup() == false || (art_usil().give().increased().mf() > 0 && art_usil().give().increased().damage() == 0)">
+                    <label class="big2">
+                        Усиление макс. МФ: <span data-bind="text: art_usil().give().increased().mf()"></span>%
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[6].setup() == false, click: art_usil().levels[6].setup(2)">+</a>
+                    </span>
+                    <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: art_usil().give().increased().mf() > 0, click: art_usil().levels[6].setup(false)">-</a>
+                    </span>
+                </li>
+                <li data-bind="visible: art_usil().levels[6].setup() == false || (art_usil().give().increased().mf() > 0 && art_usil().give().increased().damage() > 0)">
+                    <label class="big2">
+                        Усиление макс. МФ: <span data-bind="text: art_usil().give().increased().mf()"></span>% и Усиление урона: <span data-bind="text: art_usil().give().increased().damage()"></span>%
+                    </label>
+                    <span class="plus-block">
+                        <a href="javascript:void(0)" class="plus" data-bind="visible: art_usil().levels[6].setup() == false, click: art_usil().levels[6].setup(3)">+</a>
+                    </span>
+                    <span class="minus-block">
+                        <a href="javascript:void(0)" class="minus" data-bind="visible: (art_usil().give().increased().mf() > 0 && art_usil().give().increased().damage() > 0), click: art_usil().levels[6].setup(false)">-</a>
+                    </span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

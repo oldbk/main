@@ -1,0 +1,40 @@
+@charset "windows-1251";
+/* CSS Document */
+* {margin: 0; padding: 0; outline: none;}
+
+img2 {
+	border:none;
+}
+
+body2 {
+	background: #ededed;
+	font: 12px Tahoma; color: #000;
+	}
+
+.header2 {
+	background: url(head_bg.jpg) no-repeat left top;
+	}
+
+.left_bg2 {
+	background: url(left_bg.jpg) no-repeat right top;
+	}
+	
+.right_bg2 {
+	background: url(right_bg.jpg) no-repeat left top;
+	}
+	
+.cont_bg2 {
+	background: url(cont_bg.jpg) repeat-y left top;
+	padding: 0 20px;
+	}
+	
+.hh1 {
+	font-size: 16px;
+	text-align: center;
+	color: #c10000;
+	}
+
+.hh2 {
+	font-size: 13px;
+	color: #49545a;
+	}

@@ -1,0 +1,56 @@
+body {
+    margin: 0 0 0 0;
+    font-family: Verdana;
+    background-color: #e2e0e0;
+}
+
+.main {
+    background: url('/i/jail/temn.jpg') no-repeat center top;
+    height: 100%;
+    width: 100%;
+}
+
+.cols {
+	width:1090px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top_col_l {
+	background: url('/i/jail/top_l.jpg') no-repeat left top;
+}
+
+.top_col_r {
+	background: url('/i/jail/top_r.jpg') no-repeat right top;
+}
+
+.mid_col_l {
+	background: url('/i/jail/mid_l.jpg') repeat-y left;
+}
+
+.mid_col_r {
+	background: url('/i/jail/mid_r.jpg') repeat-y right;
+}
+
+.bot_col_l {
+	background: url('/i/jail/bot.png') no-repeat left bottom;
+}
+
+.bot_col_r {
+	background: url('/i/jail/bot.png') no-repeat right bottom;
+}
+
+.content {
+    width: 995px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+	padding-top: 35px;
+}
+
+legend {
+	font-family: Verdana;
+	font-size:10px;
+	color:#003388;
+	letter-spacing:1px;
+}

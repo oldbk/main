@@ -1,0 +1,913 @@
+body {
+    margin: 0;
+    background-color: #E2E0E1;
+}
+body.bg2 {
+    background-color: #d7d7d7;
+}
+body#arenda-body {
+    background-color: #e0e0e0;
+}
+#page-wrapper {
+    font-family: Tahoma;
+    font-size: 13px;
+}
+#page-wrapper .container-wrapper {
+    padding: 10px;
+}
+#page-wrapper table td {
+    padding: 5px;
+    vertical-align: top;
+}
+#page-wrapper ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#page-wrapper .money {
+    color: #428f21;
+}
+#page-wrapper a {
+    text-decoration: none;
+    color: #003585;
+}
+#page-wrapper .mhint {
+    color: #878787;
+    font-style: italic;
+    font-size: 11px;
+}
+#page-wrapper .size11 {
+    font-size: 11px;
+}
+#page-wrapper .date {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #007000;
+    FONT-FAMILY: Courier;
+    TEXT-DECORATION: none;
+    display: inline-block;
+}
+#page-wrapper .center {
+    text-align: center;
+}
+#page-wrapper .title {
+    text-align: center;
+}
+#page-wrapper .title .h3 {
+    display: inline-block;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #8f0000;
+    FONT-FAMILY: Arial;
+}
+#page-wrapper input {
+    height: 12px;
+    padding: 1px;
+    font-size: 11px;
+}
+#page-wrapper .date {
+    margin-right: 5px;
+}
+#page-wrapper ul li {
+    padding: 5px;
+}
+#page-wrapper .info {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+/** buttons */
+#buttons {
+    height: 25px;
+    float: right;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+#page-wrapper .btn {
+    font-family: MS Sans Serif;
+    font-size: 10px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    line-height: 10px\0/;
+}
+#page-wrapper .btn {
+    display: inline-block;
+}
+#page-wrapper .button-dark-mid {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 75px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/images/buttons/darkButton_mid_Sprite.jpg") no-repeat 0 -19px;
+    /*background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") no-repeat 0 -19px;*/
+}
+#page-wrapper .button-dark-mid:hover {
+    background: url("http://i.oldbk.com/i/images/buttons/darkButton_mid_Sprite.jpg") no-repeat 0 -38px;
+    /*background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") 0 -38px;*/
+}
+#page-wrapper .button-dark-mid:active {
+    background: url("http://i.oldbk.com/i/images/buttons/darkButton_mid_Sprite.jpg") 0 0;
+    /*background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") 0 0;*/
+}
+#page-wrapper .button-mid {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 75px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/images/buttons/button_mid_Sprite.jpg") no-repeat 0 -19px;
+    /*background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") no-repeat 0 -19px;*/
+}
+#page-wrapper .button-mid:hover {
+    background: url("http://i.oldbk.com/i/images/buttons/button_mid_Sprite.jpg") no-repeat 0 -38px;
+    /*background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") 0 -38px;*/
+}
+#page-wrapper .button-mid:active {
+    background: url("http://i.oldbk.com/i/images/buttons/button_mid_Sprite.jpg") 0 0;
+    /*/background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") 0 0;*/
+}
+#page-wrapper .button-big {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 114px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/images/buttons/button_big_Sprite.jpg") no-repeat 0 -19px;
+    /*background: url("http://i.oldbk.com/i/buttons/button_big_Sprite.jpg") no-repeat 0 -19px;*/
+}
+#page-wrapper .button-big:hover {
+    background: url("http://i.oldbk.com/i/images/buttons/button_big_Sprite.jpg") no-repeat 0 -38px;
+    /*background: url("http://i.oldbk.com/i/buttons/button_big_Sprite.jpg") 0 -38px;*/
+}
+#page-wrapper .button-big:active {
+    background: url("http://i.oldbk.com/i/images/buttons/button_big_Sprite.jpg") no-repeat 0 0;
+    /*background: url("http://i.oldbk.com/i/buttons/button_big_Sprite.jpg") 0 0;*/
+}
+#page-wrapper .button-sbig {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 180px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/images/buttons/button_cp_exit_sprite.jpg") no-repeat 0 -19px;
+    /* background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 -19px; */
+}
+#page-wrapper .button-sbig:hover {
+    background: url("http://i.oldbk.com/i/images/buttons/button_cp_exit_sprite.jpg") no-repeat 0 -38px;
+    /* background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 -38px; */
+}
+
+#page-wrapper .button-sbig:active {
+    background: url("http://i.oldbk.com/i/images/buttons/button_cp_exit_sprite.jpg") no-repeat 0 0;
+    /* background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 0; */
+}
+#page-wrapper a.btn {
+    color: black;
+}
+/** end buttons */
+/* TABLE */
+#page-wrapper table tr.hidden td {
+    display: none;
+}
+#page-wrapper table tr td.sub-title {
+    font-weight: bold;
+    color: #8f0000;
+}
+#page-wrapper table tr.head-line {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    height: 28px;
+    background-image: url("http://i.oldbk.com/i/images/ristal/spoiler_bg.jpg");
+    /*background-image: url("http://i.oldbk.com/i/frendlist/head_bgx.jpg");*/
+}
+#page-wrapper table tr.head-line th {
+    padding: 0;
+    position: relative;
+    font-size: 13px;
+}
+#page-wrapper table tr.head-line th .head-left {
+    background-image: url("http://i.oldbk.com/i/images/ristal/spoiler_left.jpg");
+    float: left;
+    width: 8px;
+    height: 28px;
+    background-repeat: no-repeat;
+}
+#page-wrapper table tr.head-line th .head-title {
+    position: absolute;
+    padding-left: 12px;
+    line-height: 26px;
+}
+#page-wrapper table tr.head-line th .head-title.p {
+    padding-left: 0;
+    width: 100%;
+    margin-left: -7px;
+}
+#page-wrapper table tr.head-line th .head-title a {
+    color: black;
+}
+#page-wrapper table tr.head-line th .head-title a:hover, #page-wrapper table tr.head-line th .head-title a.active {
+    color: #8f0000;
+}
+#page-wrapper table tr.head-line th .head-separate {
+    background: url("http://i.oldbk.com/i/images/ristal/razdelitel.jpg") no-repeat;
+    float: right;
+    width: 12px;
+    height: 28px;
+}
+#page-wrapper table tr.head-line th .spoiler {
+    margin-top: 8px;
+}
+#page-wrapper table tr.head-line th .head-right {
+    background: url("http://i.oldbk.com/i/images/ristal/spoiler_right.jpg") no-repeat;
+    float: right;
+    width: 8px;
+    height: 28px;
+}
+#page-wrapper table {
+    width: 100%;
+    table-layout: fixed;
+}
+#page-wrapper table.table {
+    margin-bottom: 10px;
+}
+#page-wrapper table.table > tbody > tr > td {
+    border-bottom: 1px solid #a3a3a3;
+}
+#page-wrapper table.table > tbody > tr > td:first-child {
+    border-left: 1px solid #a3a3a3;
+}
+#page-wrapper table.table > tbody > tr > td:last-child {
+    border-right: 1px solid #a3a3a3;
+}
+#page-wrapper table.border > tbody > tr > td {
+    border-right: 1px solid #a3a3a3;
+}
+#page-wrapper table.border > tbody > tr:first-child td {
+    border-top: 1px solid #a3a3a3;
+}
+#page-wrapper table tr.title {
+    background-color: #a3a3a3;
+}
+#page-wrapper table tr.even {
+    background-color: #e8e8e8;
+}
+#page-wrapper table tr.odd {
+    background-color: #f0f0f0;
+}
+#page-wrapper table tr.even2 {
+    background-color: #C7C7C7;
+}
+#page-wrapper table tr.odd2 {
+    background-color: #D5D5D5;
+}
+/* END TABLE */
+/** spoiler */
+#page-wrapper .spoiler {
+    width: 17px;
+    height: 10px;
+    background-repeat: no-repeat;
+    display: block;
+}
+#page-wrapper .spoiler.right {
+    float: right;
+}
+#page-wrapper .spoiler-down {
+    background-image: url("http://i.oldbk.com/i/images/buttons/btt2.png");
+    /*background-image: url("http://i.oldbk.com/i/sostojanie/btt2.png"); */
+}
+#page-wrapper .spoiler-down:hover {
+    background-image: url("http://i.oldbk.com/i/images/buttons/btt3.png");
+    /* background-image: url("http://i.oldbk.com/i/sostojanie/btt3.png"); */
+}
+#page-wrapper .spoiler-up {
+    background-image: url("http://i.oldbk.com/i/images/buttons/btt1b.png");
+    /* background-image: url("http://i.oldbk.com/i/sostojanie/btt1b.png"); */
+}
+#page-wrapper .spoiler-up:hover {
+    background-image: url("http://i.oldbk.com/i/images/buttons/btt3b.png");
+    /* background-image: url("http://i.oldbk.com/i/sostojanie/btt3b.png"); */
+}
+/** end spoiler */
+/* items */
+#page-wrapper #filter td {
+    padding: 5px 0;
+}
+#page-wrapper .hint-block {
+    background-color: #ededed;
+    border: 1px solid #bfbfbf;
+    padding: 10px;
+    width: 100%;
+}
+#page-wrapper #filter td.filter-title {
+    background-color: #ebebeb;
+    color: #595959;
+    font-weight: bold;
+    padding-left: 5px;
+}
+#page-wrapper #filter td.filter-item ul {
+    margin-left: 10px;
+}
+#page-wrapper #filter td.filter-item li {
+    padding: 0;
+    font-weight: bold;
+}
+#page-wrapper .pagination {
+    display: inline-block;
+}
+#page-wrapper .pagination li {
+    float: left;
+    font-weight: bold;
+    padding: 0;
+    margin-right: 4px;
+}
+#page-wrapper .dress-item {
+    margin-left: 5px;
+}
+#page-wrapper .dress-item li {
+    padding: 1px;
+}
+/* end items */
+/* AUTH */
+#page-wrapper .auth-block {
+    position: relative;
+    background: url('http://i.oldbk.com/i/images/bank_aut_PNG.png') no-repeat;
+    width: 275px;
+    height: 102px;
+    margin: 0 auto;
+}
+#page-wrapper .auth-block .inner-auth {
+    position: absolute;
+    left: 65px;
+    top: 20px;
+}
+#page-wrapper .auth-block .inner-auth .auth-num select {
+    width: 159px;
+}
+#page-wrapper .auth-block .inner-auth .auth-pass {
+    margin-top: 5px;
+}
+#page-wrapper .auth-block .inner-auth .auth-pass input {
+    width: 120px;
+}
+#page-wrapper .auth-block .inner-auth .enter {
+    margin-top: 10px;
+}
+#page-wrapper .auth-block .hint-block {
+    position: absolute;
+    top: 115px;
+    width: 253px;
+    color: #5c5c5c;
+}
+/* END AUTH */
+/* stats */
+#page-wrapper .profile-stats {
+    background-color: #eaeaea;
+    border: 1px solid #aaaaaa;
+    margin-bottom: 10px;
+}
+#page-wrapper .profile-stats > tbody > tr > td {
+    padding: 10px;
+}
+#page-wrapper .profile-stats .profile {
+    border: 1px solid #aaaaaa;
+
+}
+#page-wrapper .profile-stats .profile .active {
+    color: red;
+}
+#page-wrapper .profile-stats .profile th {
+    border-right: 1px solid #aaaaaa;
+    background-color: #f0f0f0;
+    padding: 4px;
+}
+#page-wrapper .profile-stats .profile th:last-child, #page-wrapper .profile-stats .profile td:last-child {
+    border-right: 0;
+}
+#page-wrapper .profile-stats .profile td {
+    border-top: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+}
+#page-wrapper .profile-stats .profile td a {
+    font-weight: bold;
+}
+#page-wrapper .profile-stats .stats {
+    background-color: #f0f0f0;
+}
+#page-wrapper .profile-stats .stats input {
+    width: 30px;
+}
+/* end stats */
+/** DOSKA */
+#board {
+    width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+#board .clear {
+    clear: both;
+}
+#board img.bg {
+    position: absolute;
+    z-index: -1;
+}
+#board .wrapp {
+    width: 380px;
+    margin: 0 auto;
+    padding-top: 68px;
+}
+#board .wrapp .buttons {
+    position: relative;
+    height: 20px;
+}
+#board .wrapp .buttons #other, #board .wrapp .buttons #castle {
+    cursor: pointer;
+}
+#board .wrapp .buttons #other {
+    background-image: url("http://i.oldbk.com/i/images/doska/vse_norm.png");
+    width: 80px;
+    height: 15px;
+    float: left;
+}
+#board .wrapp .buttons #other:hover, #board .wrapp .buttons #other.active {
+    background-image: url("http://i.oldbk.com/i/images/doska/vse_hover.png");
+}
+#board .wrapp .buttons #castle {
+    background-image: url("http://i.oldbk.com/i/images/doska/zamk_norm.png");
+    width: 54px;
+    height: 14px;
+    float: right;
+    margin-right: 20px;
+}
+#board .wrapp .buttons #castle:hover, #board .wrapp .buttons #castle.active {
+    background-image: url("http://i.oldbk.com/i/images/doska/zamk_hover.png");
+}
+#board .wrapp .content {
+    margin-left: -35px;
+}
+#board .wrapp .content .separator {
+    background-image: url("http://i.oldbk.com/i/images/doska/razdelitel.png");
+    width: 243px;
+    height: 19px;
+    margin: 0 auto;
+}
+#board .wrapp .content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#board .wrapp .content ul li {
+    font-size: 11px;
+    font-weight: bold;
+    color: #8f0000;
+    line-height: 14px;
+    padding: 0;
+}
+#board .wrapp .content ul li.title {
+    font-size: 12px;
+    color: black;
+    padding: 3px 0;
+}
+#board .wrapp .content ul li div.larena {
+    text-align: right;
+    display: inline-block;
+    color: black;
+    width: 120px;
+}
+#board .wrapp .content .tab {
+    display: none;
+}
+#board .wrapp .content .tab.active {
+    display: block;
+}
+/** END DOSKA */
+/** RISTAL */
+#page-wrapper #ristal td.bg, #page-wrapper #ristal td.bg2 {
+    min-height: 360px;
+}
+#page-wrapper #ristal td.bg {
+    background: url("http://i.oldbk.com/i/images/ristal/bg_solo80.jpg") no-repeat center top;
+}
+#page-wrapper #ristal td.bg2 {
+    background: url("http://i.oldbk.com/i/images/ristal/bg_groups80.jpg") no-repeat center top;
+}
+#page-wrapper #ristal .top10 {
+    display: none;
+}
+#page-wrapper #ristal .top10.active {
+    display: block;
+}
+#page-wrapper #ristal .top10 div {
+    display: inline-block;
+}
+#page-wrapper #ristal .top10 .num {
+    width: 20px;
+    text-align: right;
+}
+#page-wrapper #ristal .top10 .win {
+    width: 80px;
+}
+#page-wrapper #ristal .top10-tab.active {
+    cursor: default;
+    color: #000 !important;
+}
+#page-wrapper #ristal .top-info {
+    margin: 10px 0;
+}
+#page-wrapper #ristal .top-info a {
+    vertical-align: top;
+    margin-top: 4px;
+}
+#page-wrapper #ristal table tr.head-line th .head-title a, #page-wrapper #ristal table tr.head-line th .head-title a:hover {
+    color: #003585;
+}
+/** END RISTAL */
+/* ZNAHAR */
+#page-wrapper #znahar .auth-block {
+    margin-top: 20px;
+}
+#page-wrapper #znahar .stats td {
+    padding: 2px;
+}
+#page-wrapper #znahar ul.ability-block {
+    padding-left: 50px;
+}
+#page-wrapper #znahar ul.ability-block .ability, #page-wrapper #znahar ul.ability-block .description {
+    float: left;
+    vertical-align: top;
+}
+#page-wrapper #znahar ul.ability-block .ability {
+    width: 45px;
+    margin-right: 5px;
+    margin-left: -50px;
+}
+#page-wrapper #znahar ul.ability-block .ability a {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
+}
+#page-wrapper #znahar ul.ability-block .ability > img {
+    opacity: 1;
+    filter: alpha(opacity=100); /* msie */
+}
+/* END ZNAHAR */
+/* arenda */
+#page-wrapper #arenda .content-block {
+    width: 700px;
+    margin: 0 auto;
+}
+#page-wrapper #arenda .content-block .title {
+    font-weight: bold;
+    color: #003585;
+    margin-bottom: 30px;
+}
+#page-wrapper #arenda .content-block .desc-item {
+    margin-bottom: 20px;
+}
+/* end arenda */
+/* aukcion */
+#page-wrapper #aukcion #filter .hint-block {
+    padding: 3px;
+}
+/* end aukcion */
+/* prokat */
+#page-wrapper #prokat > table {
+    background: url("http://i.oldbk.com/i/images/prokat/prokat_bg.jpg") no-repeat right top;
+    min-height: 390px;
+}
+#page-wrapper #prokat #auth {
+    padding: 20px;
+    padding-left: 40px;
+    padding-top: 0;
+}
+#page-wrapper #prokat #auth .hint-block {
+    margin-top: 15px;
+    padding: 5px 20px;
+    width: 232px;
+}
+/* end prokat */
+/* shop */
+#page-wrapper #shop .filter .head-title {
+    right: 20px;
+    top: 1px;
+}
+#page-wrapper #shop .filter .head-title select {
+    height: 18px;
+    width:200px;
+}
+#page-wrapper #shop #filter .hint-block {
+    padding: 5px 20px;
+}
+/* end shop */
+/* RUINS */
+#page-wrapper #ruins td.bg {
+    background: url("http://i.oldbk.com/i/images/ruins/ruins_bg_illustration.jpg") no-repeat right top;
+    min-height: 360px;
+}
+#page-wrapper #ruins .hint-block {
+    padding: 5px 10px;
+}
+/* end RUINS */
+/* LOTO */
+#page-wrapper #loto {
+    min-width: 1189px;
+}
+#page-wrapper #loto .relative {
+    position: relative;
+}
+#page-wrapper #loto .date {
+    font-weight: bold;
+    display: inline-block;
+    font-family: Tahoma;
+}
+#page-wrapper #loto #top-block-left {
+    position: relative;
+    width: 640px;
+    height: 445px;
+    background: url("http://i.oldbk.com/i/images/loto/Loto_BG1_Q85%25.jpg") no-repeat;
+}
+#page-wrapper #loto #top-block-left #right-info {
+    right: 75px;
+    position: absolute;
+    top: 72px;
+    width: 260px;
+    height: 115px;
+    overflow: hidden;
+}
+#page-wrapper #loto #top-block-left #right-info .next {
+    padding-left: 35px;
+    text-align: center;
+}
+#page-wrapper #loto #top-block-left #right-info .next-info {
+    position: absolute;
+    top: 30px;
+}
+#page-wrapper #loto #top-block-left #right-info .next-info li {
+    padding: 1px;
+}
+#page-wrapper #loto #top-block-left #choose-numbers {
+    position: absolute;
+    top: 265px;
+    right: 117px;
+    width: 140px;
+}
+#page-wrapper #loto #top-block-left #choose-numbers table {
+    border: 2px solid #d9bb9e;
+    width: 114px;
+    height: 90px;
+    margin: 0 auto;
+}
+#page-wrapper #loto #top-block-left #choose-numbers table td {
+    padding: 2px;
+    text-align: center;
+    border-bottom: 2px solid #d9bb9e;
+    border-right: 2px solid #d9bb9e;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+#page-wrapper #loto #top-block-left #choose-numbers table td.active {
+    background-color: #810e09;
+    color: white;
+}
+#page-wrapper #loto #top-block-left #choose-numbers table td:last-child {
+    border-right: 0;
+}
+#page-wrapper #loto #top-block-left #choose-numbers table tr:last-child td {
+    border-bottom: 0;
+}
+#page-wrapper #loto #top-block-left #choose-numbers .buy {
+    position: absolute;
+    top: 140px;
+    right: 19px;
+    font-weight: bold;
+}
+#page-wrapper #loto #top-block-left #choose-numbers .buy a, #page-wrapper #loto #top-block-left #choose-numbers .buy a:hover {
+    color: #8f0000;
+}
+#page-wrapper #loto #top-block-left #bottom-info {
+    position: absolute;
+    top: 234px;
+    left: 30px;
+    width: 275px;
+    overflow: hidden;
+    height: 110px;
+}
+#page-wrapper #loto #top-block-left #bottom-info .check-input span {
+    color: #8f0000;
+    font-weight: bold;
+}
+#page-wrapper #loto #top-block-left #bottom-info .check-input input {
+    width: 35px;
+    height: 11px;
+}
+#page-wrapper #loto #top-block-left #bottom-info .check-info {
+    position: absolute;
+    top: 34px;
+    left: 32px;
+}
+#page-wrapper #loto #top-block-left #bottom-info .check-info li {
+    padding: 1px;
+}
+#page-wrapper #loto #top-block-left #loto-numbers {
+    position: absolute;
+    top: 187px;
+    left: 70px;
+    font-weight: bold;
+}
+#page-wrapper #loto #top-block-left #loto-numbers #n1 {
+    width: 23px;
+    text-align: center;
+}
+#page-wrapper #loto #top-block-left #loto-numbers #n2 {
+    top: 0;
+    left: 42px;
+    position: absolute;
+    width: 23px;
+    text-align: center;
+}
+#page-wrapper #loto #top-block-left #loto-numbers #n3 {
+    position: absolute;
+    top: 0;
+    left: 84px;
+    width: 23px;
+    text-align: center;
+}
+#page-wrapper #loto #top-block-left #loto-numbers #n4 {
+    position: absolute;
+    left: 125px;
+    top: 0;
+    width: 23px;
+    text-align: center;
+}
+#page-wrapper #loto #top-block-left #loto-numbers #n5 {
+    position: absolute;
+    top: 0;
+    left: 168px;
+    text-align: center;
+    width: 23px;
+}
+#page-wrapper #loto #top-block-left #bottom-stats {
+    position: absolute;
+    top: 367px;
+    left: 11px;
+    width: 307px;
+}
+#page-wrapper #loto #top-block-left #bottom-stats .stats li {
+    padding: 1px;
+}
+#page-wrapper #loto #top-block-left #bottom-stats .stats #show-stats {
+    vertical-align: middle;
+    padding: 0;
+}
+#page-wrapper #loto #top-block-left #bottom-stats .stats #show-stats a {
+    display: block;
+    background: url("http://i.oldbk.com/i/images/loto/stat_norm.jpg");
+    width: 49px;
+    height: 34px;
+}
+#page-wrapper #loto #top-block-left #bottom-stats .stats #show-stats a:hover {
+    background: url("http://i.oldbk.com/i/images/loto/stat_hover.jpg");
+}
+#page-wrapper #loto #top-block-left #stats-table {
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    width: 570px;
+    overflow: hidden;
+    display: none;
+}
+#page-wrapper #loto #top-block-left #stats-table table {
+    border: 2px solid #aaaaaa;
+}
+#page-wrapper #loto #top-block-left #stats-table table th {
+    background-color: #f0f0f0;
+    padding: 5px;
+    font-weight: normal;
+    border-right: 2px solid #aaaaaa;
+}
+#page-wrapper #loto #top-block-left #stats-table table th:last-child {
+    border-right: 0;
+}
+#page-wrapper #loto #top-block-left #stats-table table td {
+    border-top: 2px solid #aaaaaa;
+    border-right: 2px solid #aaaaaa;
+    text-align: center;
+    vertical-align: middle;
+}
+#page-wrapper #loto #top-block-left #stats-table table td:last-child {
+    border-right: 0;
+}
+#page-wrapper #loto #top-block-left #stats-table table td.win {
+    padding: 13px 0;
+}
+#page-wrapper #loto #top-block-right {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    background: url("http://i.oldbk.com/i/images/loto/Loto_BG2_Q85%25.jpg") no-repeat right top;
+}
+#page-wrapper #loto #top-block-right #next-info-right {
+    position: absolute;
+    right: 135px;
+    top: 172px;
+}
+#page-wrapper #loto #top-block-right li {
+    padding: 1px;
+}
+#page-wrapper #loto #top-block-right #info-right {
+    width: 538px;
+    position: absolute;
+    right: 50px;
+    top: 265px;
+}
+#page-wrapper #loto #top-block-right #info-right .hint-block {
+    width: 515px;
+}
+#page-wrapper #loto #top-block-right #info-right .date {
+    font-weight: normal;
+    font-style: italic;
+}
+#page-wrapper #loto #top-block-right table .head-title {
+    font-weight: normal;
+}
+
+.ahint {
+	FONT-SIZE: 8px; COLOR: #000080; FONT-FAMILY: MS Sans Serif; TEXT-DECORATION: none
+}
+#hint2 {
+	VISIBILITY: hidden; WIDTH: 140px; POSITION: absolute; BACKGROUND-COLOR: #fff6dd; layer-background-color: #FFF6DD
+}
+#hint3 {
+	VISIBILITY: hidden; WIDTH: 240px; POSITION: absolute; BACKGROUND-COLOR: #fff6dd; layer-background-color: #FFF6DD
+}
+.vstr {
+	z-index:10;
+	position:absolute;
+	left:3px;
+	bottom: 1px;
+	width:3px;
+}
+    .vstroj-outer {
+        position: absolute;
+        height: 17px;
+        width: 5px;
+        left: 1px;
+        top: 1px;
+        background-color: #e2e0e0;
+    }
+    .vstroj-outer.double {
+        width: 9px;
+    }
+    .vstroj-outer {
+        /*border-right: 1px solid rgba(0, 0, 0, 0.8);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.8);*/
+        /*border-left: 1px solid rgba(255, 255, 255, 0.4);
+		border-top: 1px solid rgba(255, 255, 255, 0.4);*/
+        height: 17px;
+        width: 5px;
+
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+        box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+    }
+    .vstroj-outer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 17px;
+        margin-left: 1px;
+        margin-top: 1px;
+        width: 3px;
+        float: left;
+    }
+    .vstroj-outer ul li {
+        height: 3px;
+        background-color: #a40a0a;
+        width: 3px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        position: relative;
+        float: left;
+    }
+    .vstroj-outer ul li .point {
+        background-color: #ffce07;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+    }
+
+/* END LOTO */

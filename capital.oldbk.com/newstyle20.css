@@ -1,0 +1,879 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #8f0000; FONT-FAMILY: Arial; TEXT-ALIGN: center
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; MARGIN-BOTTOM: 5px; COLOR: #8f0000; FONT-FAMILY: Arial
+}
+H5 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11pt; MARGIN-BOTTOM: 0px; COLOR: #4f0000; FONT-FAMILY: Arial
+}
+H6 {
+ FONT-WEIGHT: bold; FONT-SIZE: 10pt; MARGIN-BOTTOM: 0px; COLOR: black; FONT-FAMILY: Verdana
+}
+H2 {
+ FONT-WEIGHT: bold; FONT-SIZE: 10pt; MARGIN-BOTTOM: 0px; COLOR: #8f0000; FONT-FAMILY: Verdana
+}
+A {
+	FONT-WEIGHT: bold; COLOR: #003388; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #003388; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #6f0000
+}
+A:hover {
+	COLOR: #0066ff
+}
+.date {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #007000; FONT-FAMILY: Courier; TEXT-DECORATION: none
+}
+.date2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #007000; FONT-FAMILY: Courier; BACKGROUND-COLOR: #00ffaa; TEXT-DECORATION: none
+}
+
+body {
+    background-color: rgb(226, 224, 224);
+    padding: 0;
+    margin: 0;
+}
+img {
+    border: 0;
+}
+
+.btn {
+    font-family: MS Sans Serif;
+    font-size: 10px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    line-height: 10px\0/;
+}
+
+.pointer {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.center {
+    text-align: center;
+}
+.icon {
+    display: inline-block;
+    cursor: pointer;
+}
+.icon.private {
+    width: 20px;
+    height: 15px;
+    background-image: url("http://i.oldbk.com/i/lock.gif");
+}
+.icon.remove {
+    width: 13px;
+    height: 13px;
+    background-image: url("http://i.oldbk.com/i/clear.gif");
+}
+.icon.edit {
+    width: 15px;
+    height: 15px;
+    background-image: url("http://i.oldbk.com/i/frendlist/edit_button.png");
+}
+#page-wrapper {
+    font-family: Tahoma;
+    padding: 10px;
+}
+#page-wrapper .hr_n {
+    background-image: url("http://i.oldbk.com/i/world_map2/hr_line.jpg");
+    height: 5px;
+}
+#page-wrapper .block-hint {
+    border: 1px solid #b0b0b0;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    background-color: #eeeced;
+    text-align: center;
+    font-weight: bold;
+    font-family: tahoma;
+    font-size: 12px;
+    color: #656364;
+}
+#page-wrapper a {
+    text-decoration: none;
+    color: #003289;
+}
+#page-wrapper .text-hint {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: #535252;
+    font-weight: bold;
+}
+#page-wrapper .left-text .nickname-wrapper {
+    text-align: left;
+    font-size: 10pt;
+    font-family:Verdana,Arial,Helvetica,Tahoma,sans-serif;
+}
+#page-wrapper .table-list {
+    width: 90%;
+    position: relative;
+}
+#page-wrapper .table-list tr.title-row td {
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    color: #6d6d6d;
+    padding: 5px;
+}
+
+#page-wrapper.map-wrapper .btn-control .left-text {
+  position: absolute;
+}
+
+#page-wrapper .table-list tr.head-line {
+    position: relative;
+    text-align: center;
+    background-image: url("http://i.oldbk.com/i/frendlist/head_bgx.jpg");
+    padding: 0;
+}
+#page-wrapper .table-list th a,  #page-wrapper .table-list th .head-title span {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 2px 15px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #535252;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#page-wrapper .table-list th a.active, #page-wrapper .table-list th a:hover, #page-wrapper .table-list th .head-title span.active {
+    color: #b12321;
+}
+#page-wrapper .table-list th .head-left, #page-wrapper th .head-right {
+    width: 19px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+#page-wrapper .table-list th .head-title {
+    background-image: url("http://i.oldbk.com/i/obrazy/head_category_name_bg.jpg");
+    width: 174px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -87px;
+}
+#page-wrapper .table-list th .head-left {
+    background-image: url("http://i.oldbk.com/i/frendlist/head_left.jpg");
+    float: left;
+}
+#page-wrapper .table-list th .head-right {
+    background-image: url("http://i.oldbk.com/i/frendlist/head_right.jpg");
+    float: right;
+}
+#page-wrapper .table-list th .head-separate {
+    width: 12px;
+    height: 30px;
+    background: url("http://i.oldbk.com/i/obrazy/head_razdelitel.jpg") no-repeat;
+}
+#page-wrapper .table-list th .head-separate.left {
+    float: left;
+}
+#page-wrapper .table-list th .head-separate.right {
+    float: right;
+}
+#page-wrapper .table-list th .head-spoiler-btn {
+    width: 17px;
+    height: 10px;
+    background-repeat: no-repeat;
+}
+#page-wrapper .table-list th .head-spoiler-btn.a {
+    background-image: url("http://i.oldbk.com/i/sostojanie/btt2.png");
+}
+#page-wrapper .table-list th .head-spoiler-btn.a:hover {
+    background-image: url("http://i.oldbk.com/i/sostojanie/btt3.png");
+}
+#page-wrapper .table-list th .head-spoiler-btn.b {
+    background-image: url("http://i.oldbk.com/i/sostojanie/btt1b.png");
+}
+#page-wrapper .table-list th .head-spoiler-btn.b:hover {
+    background-image: url("http://i.oldbk.com/i/sostojanie/btt3b.png");
+}
+#page-wrapper .table-list th .head-spoiler-btn.right {
+    float: right;
+}
+#page-wrapper .table-list.sostoyanie th .head-spoiler-btn {
+    position: absolute;
+    right: 20px;
+    top: 11px;
+}
+#page-wrapper .table-list th, #page-wrapper .table-list td {
+    font-size: 11pt;
+    position: relative;
+}
+#page-wrapper .table-list .item-row td {
+    padding: 5px 0;
+    min-height: 24px;
+    vertical-align: middle;
+}
+#page-wrapper .table-list .row-center em {
+    font-size: 13px;
+    padding-right: 30px;
+    padding-left: 10px;
+    display: block;
+}
+#page-wrapper .table-list .row-left .separate, #page-wrapper .table-list .row-center .separate, #page-wrapper .table-list .row-right .separate {
+    height: 1px;
+    clear: both;
+    background-color: white;
+}
+#page-wrapper .table-list .row-left .separate {
+    position: absolute;
+    left: 15px;
+    right: 8px;
+    bottom: 0;
+}
+#page-wrapper .table-list .row-center .separate {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 0;
+}
+#page-wrapper .table-list .row-right .separate {
+    position: absolute;
+    left: 8px;
+    right: 15px;
+    bottom: 0;
+}
+#page-wrapper .table-list > tbody > tr > td.row-left {
+    background: url("http://i.oldbk.com/i/frendlist/main_bgy_left.jpg") repeat-y;
+}
+#page-wrapper .table-list > tbody > tr > td.row-center {
+    background-color: #f5f4f4;
+}
+#page-wrapper .table-list > tbody > tr > td.row-right {
+    background: url("http://i.oldbk.com/i/frendlist/main_bgy_right.jpg") repeat-y;
+}
+#page-wrapper .obraz-list {
+    width: 100%;
+    min-width: 650px;
+}
+#page-wrapper .obraz-list .row-left {
+    background: url("http://i.oldbk.com/i/obrazy/main_bgy_left.jpg") repeat-y;
+}
+#page-wrapper .obraz-list .row-center {
+    background-color: #e8e6e7;
+}
+#page-wrapper .obraz-list .row-right {
+    background: url("http://i.oldbk.com/i/obrazy/main_bgy_right.jpg") repeat-y;
+}
+#page-wrapper .table-list > tbody > tr > td.row-right .row-location {
+    color: #535252;
+    font-size: 12px;
+    font-weight: bold;
+    width: 280px;
+    margin-left: 6px;
+    text-align: center;
+}
+#page-wrapper .table-list > tbody > tr > td.row-right .row-location.empty {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 11px;
+}
+#page-wrapper .table-list > tfoot > tr {
+    height: 12px;
+}
+#page-wrapper .table-list > tfoot > tr > td .footer-left, #page-wrapper .table-list > tfoot > tr > td .footer-center, #page-wrapper .table-list > tfoot > tr > td .footer-right {
+    height: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#page-wrapper .table-list#ob, #page-wrapper .table-list#frendlist, #page-wrapper .table-list.pic-items, #page-wrapper table.table-form {
+    margin: 0 auto;
+}
+
+
+#page-wrapper .table-list .footer-frendlist .footer-left {
+    background-image: url("http://i.oldbk.com/i/frendlist/down_left.png");
+    z-index: 1;
+}
+#page-wrapper .table-list .footer-frendlist .footer-center {
+    background-image: url("http://i.oldbk.com/i/frendlist/down_center_bgx.jpg");
+    left: -4px;
+    right: -4px;
+    z-index: 0;
+}
+#page-wrapper .table-list .footer-frendlist .footer-right {
+    background-image: url("http://i.oldbk.com/i/frendlist/down_right.png");
+    z-index: 1;
+}
+
+#page-wrapper .table-list .obraz-footer .footer-left {
+    background: url("http://i.oldbk.com/i/obrazy/down_left.jpg") no-repeat;
+}
+#page-wrapper .table-list tr.obraz-footer {
+    background: url("http://i.oldbk.com/i/obrazy/down_bgx.jpg") repeat-x;
+}
+#page-wrapper .table-list .obraz-footer .footer-right {
+    background: url("http://i.oldbk.com/i/obrazy/down_right.jpg") no-repeat right;
+}
+#page-wrapper .table-list#frendlist tr:last-child td {
+    padding-bottom: 20px;
+}
+#page-wrapper .table-list .icon.private {
+    margin-left: 22px; margin-right: 5px;
+}
+#page-wrapper .table-list .icon.remove {
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    margin-top: -8px;
+}
+#page-wrapper .table-list .icon.edit {
+    top: 50%;
+    position: absolute;
+    right: 0;
+    margin-top: -8px;
+}
+#page-wrapper .table-form {
+    width: 88%;
+}
+#page-wrapper .table-form td.form-input {
+    background-image: url("http://i.oldbk.com/i/frendlist/form_bgx.jpg");
+    height: 35px;
+}
+#page-wrapper .table-form td.form-input input[type="text"] {
+    color: #535252;
+    padding: 0 10px;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    height: 19px;
+}
+
+#page-wrapper .table-form .button-big.submit {
+  padding-top: 5px;
+  line-height: 10px;
+}
+
+#page-wrapper .table-form td.form-input input[type="text"]:focus {
+    outline: 0;
+}
+#page-wrapper .table-form td.form-left, #page-wrapper .table-form td.form-right {
+    width: 10px;
+    height: 35px;
+}
+#page-wrapper .table-form td.form-left {
+    background-image: url("http://i.oldbk.com/i/frendlist/form_left.jpg");
+}
+#page-wrapper .table-form td.form-separate {
+    background-image: url("http://i.oldbk.com/i/frendlist/form_razdelitel.png");
+}
+#page-wrapper .table-form td.form-right {
+    background-image: url("http://i.oldbk.com/i/frendlist/form_right.jpg");
+}
+/** BTN */
+#page-wrapper .btn-control {
+    width: 100%;
+    text-align: right;
+    height: 25px;
+    clear: both;
+    min-width: 685px;
+}
+#page-wrapper .btn-control .left-text {
+    float: left;
+}
+#page-wrapper .btn-control .left-text .text-title, #page-wrapper .btn-control .left-text .hint-text {
+    display: inline-block;
+    vertical-align: top;
+}
+#page-wrapper .btn-control .left-text .text-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #b12321;
+    padding-top: 2px;
+}
+#page-wrapper .btn-control .left-text .hint-text {
+    color: #9e9c9d;
+    font-size: 13px;
+    padding-top: 1px;
+}
+#page-wrapper .btn-control .btn {
+    display: inline-block;
+}
+#page-wrapper .button-big {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 180px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 -19px;
+}
+#page-wrapper .button-big.submit {
+    cursor: pointer;
+    width: 180px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+#page-wrapper .button-big:hover {
+    background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 -38px;
+}
+#page-wrapper .button-big:active {
+    background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 0;
+}
+
+#page-wrapper .text-head {
+font-weight: bold;
+font-size: 12pt;
+color: #8F0000;
+font-family: Arial;
+text-align: center;
+}
+
+#page-wrapper .button-mid {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 75px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") no-repeat 0 -19px;
+}
+#page-wrapper .button-mid:hover {
+    background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") 0 -38px;
+}
+#page-wrapper .button-mid:active {
+    background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") 0 0;
+}
+#page-wrapper .button-dark-mid {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 75px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") no-repeat 0 -19px;
+}
+#page-wrapper .button-dark-mid:hover {
+    background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") 0 -38px;
+}
+#page-wrapper .button-dark-mid:active {
+    background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") 0 0;
+}
+/** END BTN */
+#page-wrapper .obraz-items {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+#page-wrapper .obraz-items li {
+    display: inline-block;
+    background: url("http://i.oldbk.com/i/obrazy/obraz_frame_bg.jpg") no-repeat 15px 0;
+    width: 120px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#page-wrapper .obraz-items .obraz-item .obraz-item-head {
+    padding: 7px;
+    text-align: center;
+}
+#page-wrapper .obraz-items li.obraz-item .btn {
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+}
+#page-wrapper .table-list.pic-items {
+    table-layout:fixed;
+}
+#page-wrapper .table-list.pic-items td.separate {
+    background: url("http://i.oldbk.com/i/obrazy_items/hr_2.jpg") repeat-x;
+    height: 2px;
+}
+#page-wrapper .table-list.pic-items > tbody > tr > td.odd {
+    background-color: #e8e6e6;
+}
+#page-wrapper .table-list.pic-items > tbody > tr > td.even {
+    background-color: #eeecec;
+}
+#page-wrapper .table-list.pic-items > tbody > tr > td.row-left {
+    background: url("http://i.oldbk.com/i/obrazy_items/main_bgy_left.jpg") repeat-y;
+}
+#page-wrapper .table-list.pic-items > tbody > tr > td.row-center {
+    background-color: #f5f4f4;
+}
+#page-wrapper .table-list.pic-items > tbody > tr > td.row-right {
+    background: url("http://i.oldbk.com/i/obrazy_items/main_bgy_right.jpg") repeat-y;
+}
+#page-wrapper .table-list.pic-items .item-block {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+#page-wrapper .table-list.pic-items .item-block .item-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -37px;
+}
+#page-wrapper .table-list.sostoyanie {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#page-wrapper .table-list.sostoyanie .separate {
+    background-image: url("http://i.oldbk.com/i/sostojanie/hr_2.jpg");
+    height: 2px;
+    background-color: transparent;
+}
+ #page-wrapper .table-list.sostoyanie[data-hidden="true"] tr td {
+    text-align: center;
+     display: none;
+}
+#page-wrapper .table-list.sostoyanie tr.element td {
+    padding: 10px;
+    font-size: 11px;
+}
+
+#page-wrapper .table-list.sostoyanie > tbody > tr > td.row-left {
+    background: url("http://i.oldbk.com/i/sostojanie/main_bgy_left.jpg") repeat-y;
+    color: #383838;
+    text-align: center;
+    font-weight: bold;
+}
+#page-wrapper .table-list.sostoyanie > tbody > tr > td.row-center {
+    background-color: #f5f4f4;
+}
+#page-wrapper .table-list.sostoyanie > tbody > tr > td.row-right {
+    background: url("http://i.oldbk.com/i/sostojanie/main_bgy_right.jpg") repeat-y;
+}
+#page-wrapper .map-block {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 59px;
+    min-width: 309px;
+    border-spacing: 0;
+}
+#page-wrapper .map td {
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+#page-wrapper .map td:last-child {
+    padding-right: 0;
+}
+#page-wrapper .map-block .map-block-logo {
+    width: 65px;
+    *height: 59px;
+    display: table-cell;
+    border-spacing: 0;
+}
+#page-wrapper .map-block .map-block-mid {
+    *height: 59px;
+    display: table-cell;
+    border-spacing: 0
+}
+#page-wrapper .map-block .map-block-right {
+    width: 8px;
+    *height: 59px;
+    display: table-cell;
+    border-spacing: 0
+}
+#page-wrapper .table-list.map {
+    width: 100%;
+    margin-top: 3px;
+}
+
+#page-wrapper .map-block .map-block-mid .map-block-head {
+    font-weight: bold;
+    font-size: 12px;
+    height: 20px;
+    margin-top: 4px;
+    vertical-align: middle;
+    padding-top: 4px;
+    position: relative;
+}
+#page-wrapper .map-block .map-block-mid .map-block-head .active {
+    background-image: url("http://i.oldbk.com/i/world_map2/flag_position.png");
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+#page-wrapper .map-block .map-block-mid .map-block-head .head-level {
+    color: #7b7b7b;
+    font-size: 9px;
+    display: inline-block;
+    font-weight: normal;
+}
+#page-wrapper .map-block .map-block-mid .map-block-bottom {
+    padding-top: 3px;
+    height: 25px;
+}
+#page-wrapper .map-block .map-block-mid .map-block-bottom .room-amount {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+}
+#page-wrapper .map-block .map-block-mid .map-block-bottom .room-info {
+    display: inline-block;
+}
+#page-wrapper .map-block .map-block-logo.novi4ki {
+    background-image: url("http://i.oldbk.com/i/world_map2/1_novi4ki_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.novi4ki {
+    background-image: url("http://i.oldbk.com/i/world_map2/1_novi4ki_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.novi4ki {
+    background-image: url("http://i.oldbk.com/i/world_map2/1_novi4ki_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.voinov {
+    background-image: url("http://i.oldbk.com/i/world_map2/2_zal_voinov_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.voinov {
+    background-image: url("http://i.oldbk.com/i/world_map2/2_zal_voinov_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.voinov {
+    background-image: url("http://i.oldbk.com/i/world_map2/2_zal_voinov_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.torgovij {
+    background-image: url("http://i.oldbk.com/i/world_map2/3_torg_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.torgovij {
+    background-image: url("http://i.oldbk.com/i/world_map2/3_torg_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.torgovij {
+    background-image: url("http://i.oldbk.com/i/world_map2/3_torg_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.rycarskij {
+    background-image: url("http://i.oldbk.com/i/world_map2/4_rycarskij_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.rycarskij {
+    background-image: url("http://i.oldbk.com/i/world_map2/4_rycarskij_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.rycarskij {
+    background-image: url("http://i.oldbk.com/i/world_map2/4_rycarskij_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.bashnja {
+    background-image: url("http://i.oldbk.com/i/world_map2/5_bashnja_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.bashnja {
+    background-image: url("http://i.oldbk.com/i/world_map2/5_bashnja_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.bashnja {
+    background-image: url("http://i.oldbk.com/i/world_map2/5_bashnja_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.koldovskoj {
+    background-image: url("http://i.oldbk.com/i/world_map2/6_koldovskoj_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.koldovskoj {
+    background-image: url("http://i.oldbk.com/i/world_map2/6_koldovskoj_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.koldovskoj {
+    background-image: url("http://i.oldbk.com/i/world_map2/6_koldovskoj_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.eduhov {
+    background-image: url("http://i.oldbk.com/i/world_map2/7_etaz_duhov_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.eduhov {
+    background-image: url("http://i.oldbk.com/i/world_map2/7_etaz_duhov_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.eduhov {
+    background-image: url("http://i.oldbk.com/i/world_map2/7_etaz_duhov_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.astral {
+    background-image: url("http://i.oldbk.com/i/world_map2/8_astral_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.astral {
+    background-image: url("http://i.oldbk.com/i/world_map2/8_astral_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.astral {
+    background-image: url("http://i.oldbk.com/i/world_map2/8_astral_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.fire {
+    background-image: url("http://i.oldbk.com/i/world_map2/9_fire_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.fire {
+    background-image: url("http://i.oldbk.com/i/world_map2/9_fire_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.fire {
+    background-image: url("http://i.oldbk.com/i/world_map2/9_fire_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.paladinov {
+    background-image: url("http://i.oldbk.com/i/world_map2/10_paladinov_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.paladinov {
+    background-image: url("http://i.oldbk.com/i/world_map2/10_paladinov_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.paladinov {
+    background-image: url("http://i.oldbk.com/i/world_map2/10_paladinov_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.sovet {
+    background-image: url("http://i.oldbk.com/i/world_map2/11_sovet_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.sovet {
+    background-image: url("http://i.oldbk.com/i/world_map2/11_sovet_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.sovet {
+    background-image: url("http://i.oldbk.com/i/world_map2/11_sovet_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.tma {
+    background-image: url("http://i.oldbk.com/i/world_map2/12_tma_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.tma {
+    background-image: url("http://i.oldbk.com/i/world_map2/12_tma_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.tma {
+    background-image: url("http://i.oldbk.com/i/world_map2/12_tma_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.tma2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/12_tma_logo2.jpg");
+}
+#page-wrapper .map-block .map-block-mid.tma2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/12_tma_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.tma2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/12_tma_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.netral {
+    background-image: url("http://i.oldbk.com/i/world_map2/13_netral_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.netral {
+    background-image: url("http://i.oldbk.com/i/world_map2/13_netral_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.netral {
+    background-image: url("http://i.oldbk.com/i/world_map2/13_netral_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.netral2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/13_netral_logo2.jpg");
+}
+#page-wrapper .map-block .map-block-mid.netral2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/13_netral_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.netral2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/13_netral_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.svet {
+    background-image: url("http://i.oldbk.com/i/world_map2/14_svet_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.svet {
+    background-image: url("http://i.oldbk.com/i/world_map2/14_svet_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.svet {
+    background-image: url("http://i.oldbk.com/i/world_map2/14_svet_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.svet2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/14_svet_logo2.jpg");
+}
+#page-wrapper .map-block .map-block-mid.svet2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/14_svet_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.svet2 {
+    background-image: url("http://i.oldbk.com/i/world_map2/14_svet_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.buduar {
+    background-image: url("http://i.oldbk.com/i/world_map2/15_buduar_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.buduar {
+    background-image: url("http://i.oldbk.com/i/world_map2/15_buduar_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.buduar {
+    background-image: url("http://i.oldbk.com/i/world_map2/15_buduar_end.jpg");
+}
+#page-wrapper .map-block .map-block-logo.clanwars {
+    background-image: url("http://i.oldbk.com/i/world_map2/16_clanwars_logo.jpg");
+}
+#page-wrapper .map-block .map-block-mid.clanwars {
+    background-image: url("http://i.oldbk.com/i/world_map2/16_clanwars_bgx.jpg");
+}
+#page-wrapper .map-block .map-block-right.clanwars {
+    background-image: url("http://i.oldbk.com/i/world_map2/16_clanwars_end.jpg");
+}
+
+.ahint {
+	COLOR: #000080; TEXT-DECORATION: none
+}
+#hint2 {
+	VISIBILITY: hidden; z-index: 100; WIDTH: 140px; POSITION: absolute; BACKGROUND-COLOR: #fff6dd; layer-background-color: #FFF6DD
+}
+#hint3 {
+	VISIBILITY: hidden; z-index: 100; WIDTH: 240px; POSITION: absolute; BACKGROUND-COLOR: #fff6dd; layer-background-color: #FFF6DD
+}
+.vstr {
+	z-index:10;
+	position:absolute;
+	left:3px;
+	bottom: 1px;
+	width:3px;
+}
+
+    .vstroj-outer {
+        position: absolute;
+        height: 17px;
+        width: 5px;
+        left: 1px;
+        top: 1px;
+        background-color: #e2e0e0;
+    }
+    .vstroj-outer.double {
+        width: 9px;
+    }
+    .vstroj-outer {
+        /*border-right: 1px solid rgba(0, 0, 0, 0.8);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.8);*/
+        /*border-left: 1px solid rgba(255, 255, 255, 0.4);
+		border-top: 1px solid rgba(255, 255, 255, 0.4);*/
+        height: 17px;
+        width: 5px;
+
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+        box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+    }
+    .vstroj-outer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 17px;
+        margin-left: 1px;
+        margin-top: 1px;
+        width: 3px;
+        float: left;
+    }
+    .vstroj-outer ul li {
+        height: 3px;
+        background-color: #a40a0a;
+        width: 3px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        position: relative;
+        float: left;
+    }
+    .vstroj-outer ul li .point {
+        background-color: #ffce07;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+    }

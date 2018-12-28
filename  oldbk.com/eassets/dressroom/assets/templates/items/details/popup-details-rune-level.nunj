@@ -1,0 +1,13 @@
+<div>
+    <h6>Уровень</h6>
+    <ul class="list_one">
+        <li class="rune-block">
+            {% for i in range(1, 31) -%}
+                <div data-bind="click: rlevel(rlevel() == {{ i }} ? 0 : {{ i }})">
+                    <img src="" data-bind="attr:{src: image}, css: rlevel() >= {{ i }} ? 'select' : 'unselect'">
+                    <div class="rune-level">{{ i }}</div>
+                </div>
+            {%- endfor %}
+        </li>
+    </ul>
+</div>

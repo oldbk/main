@@ -1,0 +1,16 @@
+<div>
+    <h6>Заточка</h6>
+    <ul class="list_one">
+        <li class="sharpen-block">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 1 ? 0 : 1), attr:{src: sharpen().image('1')}, css: sharpen().num() == 1 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 2 ? 0 : 2), attr:{src: sharpen().image('2')}, css: sharpen().num() == 2 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 3 ? 0 : 3), attr:{src: sharpen().image('3')}, css: sharpen().num() == 3 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 4 ? 0 : 4), attr:{src: sharpen().image('4')}, css: sharpen().num() == 4 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 5 ? 0 : 5), attr:{src: sharpen().image('5')}, css: sharpen().num() == 5 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 6 ? 0 : 6), attr:{src: sharpen().image('6')}, css: sharpen().num() == 6 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 7 ? 0 : 7), attr:{src: sharpen().image('7')}, css: sharpen().num() == 7 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 8 ? 0 : 8), attr:{src: sharpen().image('8')}, css: sharpen().num() == 8 ? 'select' : 'unselect'">
+            <img src="" data-bind="click: sharpen().num(sharpen().num() == 9 ? 0 : 9), attr:{src: sharpen().image('9')}, css: sharpen().num() == 9 ? 'select' : 'unselect'">
+        </li>
+    </ul>
+</div>

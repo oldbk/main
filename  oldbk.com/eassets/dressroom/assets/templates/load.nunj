@@ -1,0 +1,20 @@
+<div class="modal fade" id="save-compl" tabindex="-1" role="dialog" aria-hidden="true" data-animation="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>Загрузить комплект</h5>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label class="col-2 col-form-label">Ключ</label>
+                    <div class="col-10">
+                            <input class="form-control" type="text" id="key-load">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="load-compl" type="button" class="btn btn-primary">Загрузить</button>
+            </div>
+        </div>
+    </div>
+</div>

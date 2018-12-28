@@ -1,0 +1,60 @@
+<li class="line-head">
+    <strong>Свойства:</strong>
+</li>
+{% if item.id == 30012 %}
+    <li>
+        В три раза увеличивает срок годности букета
+    </li>
+{% endif %}
+
+{% if item.type == 27 %}
+    <li>
+        Может одеваться на броню
+    </li>
+{% elseif item.type == 28 %}
+    <li>
+        Может одеваться под броню
+    </li>
+{% endif %}
+
+{% if item.isProkat %}
+    <li>
+        <strong style="color: #676565;">Вещь из Прокатной лавки</strong>
+    </li>
+{% endif %}
+
+{% if item.rareitem == 10 %}
+    <li>
+        <strong style="color: #676565;">Обычный предмет</strong>
+    </li>
+{% endif %}
+{% if item.rareitem == 1 %}
+    <li>
+        <strong style="color: #34a122;">Редкий предмет</strong>
+    </li>
+{% endif %}
+{% if item.rareitem == 2 %}
+    <li>
+        <strong style="color: #2145ad;">Великий предмет</strong>
+    </li>
+{% endif %}
+{% if item.rareitem == 3 %}
+    <li>
+        <strong style="color: #760c90;">Легендарный предмет</strong>
+    </li>
+{% endif %}
+{% if item.u %}
+    <li>
+        <strong style="color: maroon;">Вещь с уникальной модификацией</strong>
+    </li>
+{% endif %}
+{% if item.uu %}
+    <li>
+        <strong style="color: #990099;">Вещь с улушченной уникальной модификацией</strong>
+    </li>
+{% endif %}
+{% if item.charka.num > 0 %}
+    <li>
+        <strong>Вещь зачарована</strong>
+    </li>
+{% endif %}

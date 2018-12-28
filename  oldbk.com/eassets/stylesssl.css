@@ -1,0 +1,264 @@
+/* CSS Document */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    padding: 0;
+}
+
+.TD1 {
+    vertical-align: top;
+    FONT-SIZE: 12px;
+    COLOR: #47422b;
+    LINE-HEIGHT: 13px;
+    FONT-FAMILY: tahoma, serif;
+    TEXT-ALIGN: left;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+body {
+    background-color: #f5f4f4;
+}
+
+a img {
+    border: none;
+}
+
+A:link {
+    color: #7c6547;
+}
+
+A:visited {
+    color: #7c6547;
+}
+
+A:hover {
+    color: #911717;
+}
+
+A:link {
+    text-decoration: none
+}
+
+A:visited {
+    text-decoration: none
+}
+
+A:active {
+    text-decoration: none
+}
+
+.cont_box_bot_com_txt1 {
+    position: absolute;
+    padding-top: 82px;
+    right: 30px;
+    color: #fce9a1;
+    font-weight: bold;
+    line-height: 42px;
+    font-size: 1.775em;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.cont_box_bot_com_txt2 {
+    position: absolute;
+    padding-top: 117px;
+    color: #ffffff;
+    right: 30px;
+    font-size: 1.1em;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: inherit;
+}
+
+.leftY {
+    vertical-align: top;
+    height: 1065px;
+    background: url('https://oldbk.com/eassets/i/leftY.jpg') right repeat-y;
+}
+
+.rightY {
+    vertical-align: top;
+    background: url('https://oldbk.com/eassets/i/rightY.jpg') left repeat-y;
+}
+
+.headLeft {
+    height: 270px;
+    background: url('https://oldbk.com/eassets/i/head_left.jpg') right no-repeat;
+}
+
+.headRight {
+    background: url('https://oldbk.com/eassets/i/head_right.jpg') left no-repeat;
+}
+
+.header {
+    height: 263px;
+    background: url('https://oldbk.com/eassets/i/header.jpg') no-repeat;
+}
+
+.cont_cracks {
+    height: 700px;
+    vertical-align: top;
+    background: url('https://oldbk.com/eassets/i/cracks.jpg') top center no-repeat;
+    padding-left: 25px;
+    /*padding-right: 5px;*/
+    /*margin: 25px;*/
+}
+
+.cont_cracks_table {
+    text-align: center;
+    width: 973px;
+}
+
+.cont_cracks_table_td {
+    width: 271px;
+    vertical-align: top;
+}
+
+.menu_head {
+    width: 271px;
+    height: 18px;
+    background: url('https://oldbk.com/eassets/i/menu_head.png') bottom right no-repeat;
+}
+
+.menu_foot {
+    width: 271px;
+    height: 26px;
+    background: url('https://oldbk.com/eassets/i/menu_foot.png') top center no-repeat;
+}
+
+.menu_cat {
+    height: 50px;
+    vertical-align: top;
+    text-align: center;
+    background: url('https://oldbk.com/eassets/i/menu_category.png') top center no-repeat;
+    FONT-SIZE: 13px;
+    font-weight: bold;
+    COLOR: #911717;
+    FONT-FAMILY: tahoma, serif;
+    padding-top: 12px;
+}
+
+.menu {
+    vertical-align: top;
+    text-align: left;
+    FONT-SIZE: 11px;
+    font-weight: bold;
+    COLOR: #7c6547;
+    FONT-FAMILY: tahoma, serif;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.footLeft {
+    background: url('https://oldbk.com/eassets/i/foot_l.jpg') right no-repeat;
+}
+
+.footRight {
+    background: url('https://oldbk.com/eassets/i/foot_r.jpg') left no-repeat;
+}
+
+.footer {
+    width: 1018px;
+    height: 138px;
+    vertical-align: bottom;
+    text-align: center;
+    background: url('https://oldbk.com/eassets/i/footer.jpg') no-repeat;
+}
+
+.table_library {
+    width: 650px;
+    border: 1px solid #cec9b5;
+}
+
+.table_library.td {
+    border: 1px solid #cec9b5;
+}
+
+.table_library.th {
+    border: 1px solid #cec9b5;
+}
+
+.table_library_one {
+    width: 650px;
+    border: 1px solid #cec9b5;
+}
+
+.table_library_one.td {
+    border: 1px solid #cec9b5;
+}
+
+.table_library_one.th {
+    border: 1px solid #cec9b5;
+}
+
+.brauzernaya_online_igra {
+    color: #47422b !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+}
+
+.down_menu {
+    /*width: 600px;*/
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    FONT-SIZE: 11px;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: tahoma, serif;
+}
+
+a.down_menuL:link {
+    color: #ffffff;
+}
+
+a.down_menuL:visited {
+    color: #ffffff;
+}
+
+a.down_menuL:hover {
+    color: #18ff00;
+}
+
+.table {
+    /*border: none;*/
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.tableWidth100 {
+    width: 100%;
+}
+
+.empty270 {
+    height: 270px;
+}
+
+.main_bg {
+    width: 1018px;
+    vertical-align: top;
+    background-image: url('https://oldbk.com/eassets/i/main_bg.jpg');
+}
+
+.menu_bg {
+    width: 271px;
+    height: 900px;
+    vertical-align: top;
+    background-image: url('https://oldbk.com/eassets/i/menu_bg.png');
+}
+
+.category_table {
+    width: 256px;
+    text-align: center;
+}

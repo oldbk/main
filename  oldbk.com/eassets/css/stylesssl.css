@@ -1,0 +1,115 @@
+/* CSS Document */
+
+
+.TD1 {
+	FONT-SIZE: 12px;
+	COLOR: #47422b;
+	LINE-HEIGHT: 13px;
+	FONT-FAMILY: tahoma;
+	TEXT-ALIGN: left;
+	padding-left: 10px;
+	
+}
+
+
+body { 
+background-color: #f5f4f4;
+}
+
+a img { border: none; }
+
+A:link {color:#7c6547;} 
+A:visited {color:#7c6547;} 
+A:hover {color:#911717;}
+
+
+A:link {text-decoration: none} 
+A:visited {text-decoration: none} 
+A:active {text-decoration: none} 
+
+.cont_box_bot_com_txt1 {position:absolute; padding-top: 82px; right: 30px;  color: #fce9a1; font-weight:bold; line-height:42px;   font-size:1.775em; font-family: inherit; font-weight: bold;}
+.cont_box_bot_com_txt2 {position:absolute; padding-top: 117px; color:#ffffff; right: 30px; font-size:1.1em;  line-height: 20px;  font-weight:normal; font-family: inherit;}
+
+
+.leftY { background: url('https://oldbk.com/encicl/i/leftY.jpg') right repeat-y;}
+
+.rightY { background: url('https://oldbk.com/encicl/i/rightY.jpg') left repeat-y;}
+
+.headLeft { background: url('https://oldbk.com/encicl/i/head_left.jpg') right no-repeat;}
+
+.headRight { background: url('https://oldbk.com/encicl/i/head_right.jpg') left no-repeat;}
+
+.header { background: url('https://oldbk.com/encicl/i/header.jpg') no-repeat;}
+
+.cont_cracks { background: url('https://oldbk.com/encicl/i/cracks.jpg') top center no-repeat;}
+
+.menu_head { background: url('https://oldbk.com/encicl/i/menu_head.png') bottom right no-repeat;}
+
+.menu_foot { background: url('https://oldbk.com/encicl/i/menu_foot.png') top center no-repeat;}
+
+.menu_cat { 
+background: url('https://oldbk.com/encicl/i/menu_category.png') top center no-repeat;
+	FONT-SIZE: 13px ;
+	font-weight: bold;
+	COLOR: #911717;
+	FONT-FAMILY: tahoma;
+	padding-top: 12px;
+}
+
+.menu { 
+	FONT-SIZE: 11px ;
+	font-weight: bold;
+	COLOR: #7c6547;
+	FONT-FAMILY: tahoma;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+
+.footLeft { background: url('https://oldbk.com/encicl/i/foot_l.jpg') right no-repeat;}
+
+.footRight { background: url('https://oldbk.com/encicl/i/foot_r.jpg') left no-repeat;}
+
+.footer { background: url('https://oldbk.com/encicl/i/footer.jpg') no-repeat;}
+.table_library {
+    width: 650px;
+    border: 1px solid #cec9b5;
+   }
+.table_library.td { 
+    border: 1px solid #cec9b5;
+   }
+.table_library.th { 
+    border: 1px solid #cec9b5;
+   }
+.table_library_one {
+    width: 650px;
+    border: 1px solid #cec9b5;
+   }
+
+.table_library_one.td { 
+    border: 1px solid #cec9b5;
+   }
+.table_library_one.th { 
+    border: 1px solid #cec9b5;
+   }
+
+
+
+.brauzernaya_online_igra {
+	color:#47422b !important;
+	text-decoration: none !important;
+	font-weight: normal !important;
+	}
+
+.down_menu {
+	letter-spacing:1px;
+	padding-bottom: 5px;	
+	text-align:center;
+	font-weight: bold;
+	FONT-SIZE: 11px;
+	COLOR: #FFFFFF;
+	FONT-FAMILY: tahoma;
+}
+
+a.down_menuL:link {color:#ffffff;} 
+a.down_menuL:visited {color:#ffffff;} 
+a.down_menuL:hover {color:#18ff00;}

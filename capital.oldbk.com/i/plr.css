@@ -1,0 +1,145 @@
+ul.btn-control.main {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 10px;
+}
+ul.btn-control.main li {
+    margin-bottom: 4px;
+}
+.btn {
+    display: inline-block;
+    font-family: MS Sans Serif;
+    font-size: 10px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    line-height: 10px\0/;
+}
+.btn-control.inventory {
+    padding-right: 10px;
+}
+.btn-control.inventory input.btn {
+    margin-bottom: 4px;
+}
+input.btn {
+    min-height: 19px;
+    border: 0;
+    margin: 0;
+    line-height: 10px;
+    color: black;
+    padding: 0;
+    padding-top: 1px;
+}
+.button-big {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 180px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 -19px;
+}
+
+.button-big.submit {
+    cursor: pointer;
+    width: 180px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.button-big:hover {
+    background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 -38px;
+}
+
+.button-big:active {
+    background: url("http://i.oldbk.com/i/frendlist/button_cp_exit_sprite.jpg") 0 0;
+}
+
+.text-head {
+    font-weight: bold;
+    font-size: 12pt;
+    color: #8F0000;
+    font-family: Arial;
+    text-align: center;
+}
+
+.button-mid {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 75px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") no-repeat 0 -19px;
+}
+
+.button-mid:hover {
+    background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") 0 -38px;
+}
+
+.button-mid:active {
+    background: url("http://i.oldbk.com/i/buttons/button_mid_Sprite.jpg") 0 0;
+}
+
+.button-dark-mid {
+    padding-top: 4px;
+    cursor: pointer;
+    width: 75px;
+    height: 15px;
+    font-size: 10px;
+    background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") no-repeat 0 -19px;
+}
+
+.button-dark-mid:hover {
+    background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") 0 -38px;
+}
+
+.button-dark-mid:active {
+    background: url("http://i.oldbk.com/i/buttons/darkButton_mid_Sprite.jpg") 0 0;
+}
+.invgroupcountplr {
+	cursor: default;
+	position: absolute;
+	top: 19px;
+	left: 0px;
+	font-size:8px;
+	font-weight:bold;
+	background-color:#717070;
+	width:11px;
+	color:white;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	text-align:center;
+}
+
+.gift-blockplr {
+	width: 30px;
+	float:left;
+	position:relative;
+	height:30px;
+}
+
+.gift-blockplr .gift-imageplr {
+	opacity: 1;
+	width: 30px;
+	height: 30px;
+}
+
+.gift-blockplr .gift-image-passiveplr {
+	filter:alpha(opacity=30);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+  	width: 30px;
+	height: 30px;
+}
+
+.itemlistplr {
+	width:180px;
+}

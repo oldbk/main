@@ -1,0 +1,53 @@
+<div class="popup-item-details">
+    <ul>
+        <li class="title">
+            {{ item.name }} {% if item.modf_info.isMF and item.isProkat == false %}<strong>(МФ)</strong>{% endif %}{% if item.isProkat %}(прокат){% endif %}{% if item.sharpen.num > 0 %}<strong>+{{ item.sharpen.num }}</strong>{% endif %} (Вес: {{ item.weight }})
+            {% if item.isArt %}
+                <IMG SRC="https://i.oldbk.com/i/artefact.gif" WIDTH="18" HEIGHT="16" BORDER=0 TITLE="Артефакт" alt="Артефакт">
+            {% endif %}
+            {% if item.isUnlim %}
+                <IMG SRC="https://i.oldbk.com/i/noobs.png" WIDTH="14" HEIGHT="8" BORDER=0 TITLE="Эту вещь всегда можно купить в Гос.магазине" alt="Эту вещь всегда можно купить в Гос.магазине">
+            {% endif %}
+        </li>
+
+        {% if item.id == 501 %}
+            <li>
+                <span style='background-color:white;'>Для профилактики травм</span>
+            </li>
+        {% endif %}
+        {% if item.letter | length and item.letter != "0" %}
+            <li>
+                <span style='background-color:white;width:90%;'>{{ item.letter }}</span>
+            </li>
+        {% endif %}
+        <li>
+            Долговечность : 0/{{ item.durability }}
+        </li>
+        {% if item.params.need.basic.needident %}
+            <li>
+                <span style="color:maroon;"><strong>Свойства предмета не идентифицированы</strong></span>
+            </li>
+        {% endif %}
+
+
+        {% if item.section.give() %}
+            {% include "section_give.nunj" %}
+        {% endif %}
+
+        {% if item.section.need() %}
+            {% include "section_need.nunj" %}
+        {% endif %}
+
+        {% if item.section.limit() %}
+            {% include "section_limit.nunj" %}
+        {% endif %}
+
+        {% if item.section.property() %}
+            {% include "section_property.nunj" %}
+        {% endif %}
+
+        {% if item.section.usil() %}
+            {% include "section_usil.nunj" %}
+        {% endif %}
+    </ul>
+</div>

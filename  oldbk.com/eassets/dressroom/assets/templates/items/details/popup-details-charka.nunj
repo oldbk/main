@@ -1,0 +1,234 @@
+<div>
+    <h6>Чарование</h6>
+    <ul class="list_one">
+        <li class="charka-block">
+            <img src="" data-bind="visible: charka().checkLevel(1), click: canChange.charka() == true ? charka().num(charka().num() == 1 ? 0 : 1) : function() {}, attr:{src: charka().image('1')}, css: charka().num() >= 1 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: charka().checkLevel(2), click: canChange.charka() == true ? charka().num(charka().num() == 2 ? 0 : 2) : function() {}, attr:{src: charka().image('2')}, css: charka().num() >= 2 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: charka().checkLevel(3), click: canChange.charka() == true ? charka().num(charka().num() == 3 ? 0 : 3) : function() {}, attr:{src: charka().image('3')}, css: charka().num() >= 3 ? 'select' : 'unselect'">
+            <img src="" data-bind="visible: charka().checkLevel(4), click: canChange.charka() == true ? charka().num(charka().num() == 4 ? 0 : 4) : function() {}, attr:{src: charka().image('4')}, css: charka().num() >= 4 ? 'select' : 'unselect'">
+        </li>
+
+        <!-- region Статы -->
+        <li data-bind="visible: charka().free.stats(), css: charka().free.stats() ? 'green' : 'red'" class="">
+            Доступно статов для распределения: <span data-bind="text: charka().free.stats()"></span>
+        </li>
+        <li data-bind="visible: charka().free.stats() > 0">
+            <div class="hr"></div>
+        </li>
+        <li data-bind="visible: charka().free.stats() > 0 || charka().give().strange() > 0">
+            <label class="big2">
+                Сила: <span data-bind="text: charka().give().strange()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.stats() > 0, click: charka().add.stats('strange')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().strange() > 0, click: charka().take.stats()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.stats() > 0 || charka().give().agility() > 0">
+            <label class="big2">
+                Ловкость: <span data-bind="text: charka().give().agility()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.stats() > 0, click: charka().add.stats('agility')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().agility() > 0, click: charka().take.stats()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.stats() > 0 || charka().give().intuition() > 0">
+            <label class="big2">
+                Интуиция: <span data-bind="text: charka().give().intuition()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.stats() > 0, click: charka().add.stats('intuition')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().intuition() > 0, click: charka().take.stats()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.stats() > 0 || charka().give().intellect() > 0">
+            <label class="big2">
+                Интеллект: <span data-bind="text: charka().give().intellect()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.stats() > 0, click: charka().add.stats('intellect')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().intellect() > 0, click: charka().take.stats()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.stats() > 0 || charka().give().wisdom() > 0">
+            <label class="big2">
+                Мудрость: <span data-bind="text: charka().give().wisdom()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.stats() > 0, click: charka().add.stats('wisdom')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().wisdom() > 0, click: charka().take.stats()">-</a>
+            </span>
+        </li>
+        <!-- endregion -->
+
+        <!-- region Модификаторы -->
+        <li data-bind="visible: charka().free.mf(), css: charka().free.mf() ? 'green' : 'red'" class="">
+            Доступно для распределения: <span data-bind="text: charka().free.mf()"></span>
+        </li>
+        <li data-bind="visible: charka().free.mf() > 0">
+            <div class="hr"></div>
+        </li>
+        <li data-bind="visible: charka().free.mf() > 0 || charka().give().critical() > 0">
+            <label class="big2">
+                Критических ударов: <span data-bind="text: charka().give().critical()"></span>%
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.mf() > 0, click: charka().add.mf('critical')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().critical() > 0, click: charka().take.mf()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.mf() > 0 || charka().give().p_critical() > 0">
+            <label class="big2">
+                Против крит. ударов: <span data-bind="text: charka().give().p_critical()"></span>%
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.mf() > 0, click: charka().add.mf('p_critical')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().p_critical() > 0, click: charka().take.mf()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.mf() > 0 || charka().give().flee() > 0">
+            <label class="big2">
+                Увертливости: <span data-bind="text: charka().give().flee()"></span>%
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.mf() > 0, click: charka().add.mf('flee')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().flee() > 0, click: charka().take.mf()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.mf() > 0 || charka().give().p_flee() > 0">
+            <label class="big2">
+                Против увертливости: <span data-bind="text: charka().give().p_flee()"></span>%
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.mf() > 0, click: charka().add.mf('p_flee')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().p_flee() > 0, click: charka().take.mf()">-</a>
+            </span>
+        </li>
+        <!-- endregion -->
+
+        <!-- region Владения оружием -->
+        <li data-bind="visible: charka().free.possession(), css: charka().free.possession() ? 'green' : 'red'" class="">
+            Доступно для распределения: <span data-bind="text: charka().free.possession()"></span>
+        </li>
+        <li data-bind="visible: charka().free.possession() > 0">
+            <div class="hr"></div>
+        </li>
+        <li data-bind="visible: charka().free.possession() > 0 || charka().give().knife() > 0,">
+            <label class="big2">
+                Мастерство владения ножами и кастетами: <span data-bind="text: charka().give().knife()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.possession() > 0, click: charka().add.possession('knife')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().knife() > 0, click: charka().take.possession()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.possession() > 0 || charka().give().ax() > 0,">
+            <label class="big2">
+                Мастерство владения топорами и секирами: <span data-bind="text: charka().give().ax()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.possession() > 0, click: charka().add.possession('ax')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().ax() > 0, click: charka().take.possession()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.possession() > 0 || charka().give().baton() > 0,">
+            <label class="big2">
+                Мастерство владения дубинами и булавами: <span data-bind="text: charka().give().baton()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.possession() > 0, click: charka().add.possession('baton')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().baton() > 0, click: charka().take.possession()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.possession() > 0 || charka().give().sword() > 0,">
+            <label class="big2">
+                Мастерство владения мечами: <span data-bind="text: charka().give().sword()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.possession() > 0, click: charka().add.possession('sword')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().sword() > 0, click: charka().take.possession()">-</a>
+            </span>
+        </li>
+        <!-- endregion -->
+
+        <!-- region Владения магией -->
+        <li data-bind="visible: charka().free.m_possession(), css: charka().free.m_possession() ? 'green' : 'red'" class="">
+            Доступно для распределения: <span data-bind="text: charka().free.m_possession()"></span>
+        </li>
+        <li data-bind="visible: charka().free.m_possession() > 0">
+            <div class="hr"></div>
+        </li>
+        <li data-bind="visible: charka().free.m_possession() > 0 || charka().give().fire() > 0">
+            <label class="big2">
+                Мастерство владения стихией Огня: <span data-bind="text: charka().give().fire()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.m_possession() > 0, click: charka().add.m_possession('fire')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().fire() > 0, click: charka().take.m_possession()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.m_possession() > 0 || charka().give().water() > 0">
+            <label class="big2">
+                Мастерство владения стихией Воды: <span data-bind="text: charka().give().water()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.m_possession() > 0, click: charka().add.m_possession('water')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().water() > 0, click: charka().take.m_possession()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.m_possession() > 0 || charka().give().earth() > 0">
+            <label class="big2">
+                Мастерство владения стихией Земли: <span data-bind="text: charka().give().earth()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.m_possession() > 0, click: charka().add.m_possession('earth')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().earth() > 0, click: charka().take.m_possession()">-</a>
+            </span>
+        </li>
+        <li data-bind="visible: charka().free.m_possession() > 0 || charka().give().air() > 0">
+            <label class="big2">
+                Мастерство владения стихией Воздуха: <span data-bind="text: charka().give().air()"></span>
+            </label>
+            <span class="plus-block">
+                <a href="javascript:void(0)" class="plus" data-bind="visible: charka().free.m_possession() > 0, click: charka().add.m_possession('air')">+</a>
+            </span>
+            <span class="minus-block">
+                <a href="javascript:void(0)" class="minus" data-bind="visible: charka().give().air() > 0, click: charka().take.m_possession()">-</a>
+            </span>
+        </li>
+        <!-- endregion -->
+    </ul>
+</div>

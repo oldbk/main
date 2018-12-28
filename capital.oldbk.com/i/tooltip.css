@@ -1,0 +1,70 @@
+.tooltip {
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+.tooltip .tooltip-wrapper {
+
+}
+.tooltip ul {
+    list-style: none;
+}
+.tooltip .tooltip-title {
+    background: url("http://i.oldbk.com/i/images/ristal/spoiler_bg.jpg");
+    text-align: center;
+    font-weight: bold;
+    height: 28px;
+    padding: 0 10px;
+    position: relative;
+}
+.tooltip .tooltip-title .title-helper-left {
+    background: url("http://i.oldbk.com/i/images/ristal/spoiler_left.jpg") no-repeat;
+    width: 8px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tooltip .tooltip-title .title-helper-right {
+    background: url("http://i.oldbk.com/i/images/ristal/spoiler_right.jpg") no-repeat;
+    width: 8px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.tooltip .tooltip-title .title-helper-content {
+    height: 28px;
+    line-height: 25px;
+    font-size: 12px;
+}
+.tooltip .tooltip-content {
+    border: 1px solid #a3a3a3;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+.tooltip .tooltip-item  li {
+    line-height: 15px;
+    padding: 0 !important;
+}
+.tooltip .tooltip-item li.separate, .tooltip-menu li.separate {
+    background: url("../pr/images/hr_2.jpg") repeat-x 50% 50%;
+    height: 2px;
+    padding: 5px !important;
+}
+.tooltip-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: gray;
+    opacity: 0.2;
+    display: none;
+}
+.tooltip-menu li.item:hover {
+    background-color: #c0c0c0;
+    color: white;
+    cursor: pointer;
+}
